@@ -1,0 +1,946 @@
+actor,film_name,release_year,genre,average_rating,director,watch_count,list_count,like_count
+Robert Downey Jr,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612293,118622,220371
+Robert Downey Jr,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525547,124185,186219
+Robert Downey Jr,Spider-Man: Homecoming,2017,Science Fiction,3.65,Jon Watts,520109,92789,158257
+Robert Downey Jr,The Avengers,2012,Science Fiction,3.69,Joss Whedon,634598,101140,164888
+Robert Downey Jr,Captain America: Civil War,2016,Action,3.61,Anthony Russo,522999,84219,136674
+Robert Downey Jr,Iron Man,2008,Adventure,3.73,Jon Favreau,552361,88776,129094
+Robert Downey Jr,Zodiac,2007,Mystery,3.99,David Fincher,364380,57346,105451
+Robert Downey Jr,Avengers: Age of Ultron,2015,Science Fiction,3.09,Joss Whedon,502294,70293,93963
+Robert Downey Jr,Iron Man 3,2013,Action,3.11,Shane Black,435573,64662,73570
+Robert Downey Jr,Iron Man 2,2010,Adventure,2.9,Jon Favreau,429954,59461,57394
+Robert Downey Jr,The Incredible Hulk,2008,Adventure,2.59,Louis Leterrier,254826,47824,23334
+Robert Downey Jr,Sherlock Holmes,2009,Crime,3.36,Guy Ritchie,287336,13638,44668
+Robert Downey Jr,Tropic Thunder,2008,War,3.42,Ben Stiller,209825,16097,40104
+Robert Downey Jr,Sherlock Holmes: A Game of Shadows,2011,Adventure,3.22,Guy Ritchie,200582,11641,26293
+Robert Downey Jr,Chef,2014,Comedy,3.58,Jon Favreau,117134,13858,27634
+Robert Downey Jr,Natural Born Killers,1994,Drama,3.5,Oliver Stone,101374,15320,20255
+Robert Downey Jr,Kiss Kiss Bang Bang,2005,Crime,3.77,Shane Black,89994,15434,22277
+Robert Downey Jr,A Scanner Darkly,2006,Thriller,3.47,Richard Linklater,54132,9285,9768
+Robert Downey Jr,Due Date,2010,Comedy,2.77,Todd Phillips,93414,4841,8013
+Robert Downey Jr,Short Cuts,1993,Comedy,3.99,Robert Altman,21919,10698,5266
+Robert Downey Jr,Weird Science,1985,Comedy,3.11,John Hughes,45186,6509,7283
+Robert Downey Jr,The Judge,2014,Drama,3.24,David Dobkin,39275,4707,5662
+Robert Downey Jr,"Good Night, and Good Luck.",2005,History,3.64,George Clooney,31686,6741,5263
+Robert Downey Jr,Chaplin,1992,Drama,3.51,Richard Attenborough,21005,3031,3458
+Robert Downey Jr,Gothika,2003,Horror,2.5,Mathieu Kassovitz,32583,2520,1976
+Robert Downey Jr,Charlie Bartlett,2007,Drama,3.25,Jon Poll,23414,2644,3375
+Robert Downey Jr,Bowfinger,1999,Comedy,3.21,Frank Oz,25264,3751,3434
+Robert Downey Jr,Wonder Boys,2000,Drama,3.57,Curtis Hanson,17497,3864,3077
+Robert Downey Jr,U.S. Marshals,1998,Crime,2.93,Stuart Baird,21529,1608,2014
+Robert Downey Jr,The Shaggy Dog,2006,Family,1.6,Brian Robbins,24480,1571,586
+Robert Downey Jr,Less than Zero,1987,Drama,3.05,Marek Kanievska,10154,2069,1498
+Robert Downey Jr,The Soloist,2009,Music,2.95,Joe Wright,15004,1514,1365
+Robert Downey Jr,Back to School,1986,Comedy,3.11,Alan Metter,11945,1924,1859
+Robert Downey Jr,Only You,1994,Romance,3.1,Norman Jewison,9586,1416,1670
+Robert Downey Jr,Richard III,1995,War,3.63,Richard Loncraine,5321,1436,962
+Robert Downey Jr,Soapdish,1991,Comedy,3.17,Michael Hoffman,6871,1347,1206
+Robert Downey Jr,A Guide to Recognizing Your Saints,2006,Drama,3.31,Dito Montiel,5570,966,734
+Robert Downey Jr,Eros,2004,Romance,3,Steven Soderbergh,3134,519,293
+Robert Downey Jr,Home for the Holidays,1995,Romance,3.2,Jodie Foster,5199,1389,893
+Robert Downey Jr,Marvel One-Shot: The Consultant,2011,Science Fiction,2.93,Leythum,6907,948,817
+Robert Downey Jr,The Pick-up Artist,1987,Comedy,2.63,James Toback,4529,998,393
+Robert Downey Jr,Heart and Souls,1993,Comedy,3.34,Ron Underwood,5591,1024,1020
+Robert Downey Jr,Fur: An Imaginary Portrait of Diane Arbus,2006,Drama,3.11,Steven Shainberg,4154,748,563
+Robert Downey Jr,Air America,1990,Comedy,2.69,Roger Spottiswoode,6394,750,491
+Robert Downey Jr,Tuff Turf,1985,Action,3.01,Fritz Kiersch,2418,1663,434
+Robert Downey Jr,In Dreams,1999,Thriller,2.54,Neil Jordan,3289,736,216
+Robert Downey Jr,Chances Are,1989,Comedy,2.99,Emile Ardolino,3220,689,439
+Robert Downey Jr,Johnny Be Good,1988,Comedy,2.17,Bud Smith,3023,514,174
+Robert Downey Jr,The Gingerbread Man,1998,Thriller,2.7,Robert Altman,2758,589,173
+Robert Downey Jr,The Singing Detective,2003,Music,2.62,Keith Gordon,2332,467,157
+Robert Downey Jr,Greaser's Palace,1972,Comedy,3.23,Robert Downey Sr.,755,559,149
+Robert Downey Jr,1969,1988,War,2.73,Ernest Thompson,1332,367,140
+Robert Downey Jr,Lucky You,2007,Drama,2.56,Curtis Hanson,2388,489,96
+Robert Downey Jr,Restoration,1995,Drama,3,Michael Hoffman,1717,528,161
+Robert Downey Jr,Two Girls and a Guy,1997,Romance,2.62,James Toback,2212,327,179
+Robert Downey Jr,Baby It's You,1983,Comedy,3.41,John Sayles,819,448,166
+Robert Downey Jr,True Believer,1989,Drama,3.13,Joseph Ruben,1311,370,175
+Robert Downey Jr,Black and White,1999,Drama,2.48,James Toback,1450,308,84
+Robert Downey Jr,Annie Leibovitz: Life Through a Lens,2006,Documentary,3.47,Barbara Leibovitz,865,284,125
+Robert Downey Jr,Firstborn,1984,Drama,3.12,Michael Apted,885,296,152
+Robert Downey Jr,One Night Stand,1997,Drama,2.7,Mike Figgis,1298,226,95
+Robert Downey Jr,Dear America: Letters Home from Vietnam,1987,Documentary,3.67,Bill Couturié,625,320,95
+Robert Downey Jr,Two Tons of Turquoise to Taos Tonight,1975,Comedy,3.07,Robert Downey Sr.,438,449,77
+Robert Downey Jr,"Marvel: 75 Years, From Pulp to Pop!",2014,Documentary,3.24,Zak Knutson,948,222,148
+Robert Downey Jr,Game 6,2005,Drama,3.01,Michael Hoffman,676,205,73
+Robert Downey Jr,Charlie: The Life and Art of Charles Chaplin,2003,Documentary,3.62,Richard Schickel,687,157,95
+Robert Downey Jr,Up the Academy,1980,Comedy,2.43,Robert Downey Sr.,562,309,45
+Robert Downey Jr,"Vanity Fair: Killers Kill, Dead Men Die",2007,Documentary,2.47,Annie Leibovitz,414,56,15
+Robert Downey Jr,Pound,1970,Comedy,3.13,Robert Downey Sr.,200,141,33
+Robert Downey Jr,Love and Distrust,2010,Romance,2.22,Lorraine Bracco,365,87,18
+Robert Downey Jr,Hail Caesar,1994,Comedy,1.95,Anthony Michael Hall,395,196,13
+Robert Downey Jr,Hugo Pool,1997,Comedy,2.53,Robert Downey Sr.,474,112,25
+Robert Downey Jr,I Am Steve McQueen,2014,Documentary,3.29,Jeff Renfroe,337,46,52
+Robert Downey Jr,The Last Party,1993,Documentary,3.24,Marc Levin,179,48,33
+Robert Downey Jr,Friends & Lovers,1999,Romance,2.45,George Haas,198,91,5
+Robert Downey Jr,Danger Zone,1996,Action,2.44,Allan Eastman,145,102,8
+Robert Downey Jr,Too Much Sun,1990,Comedy,2.77,Robert Downey Sr.,79,81,11
+Robert Downey Jr,Hubert Selby Jr: It/ll Be Better Tomorrow,2006,Documentary,3.52,Michael W. Dean,121,39,28
+Robert Downey Jr,"Luck, Trust & Ketchup: Robert Altman in Carver Country",1993,Documentary,3.52,Mike Kaplan,137,75,24
+Robert Downey Jr,Whatever We Do,2003,Comedy,2.8,Kevin Connolly,172,61,9
+Robert Downey Jr,Sherlock Holmes and Dr. Watson: A Perfect Chemistry,2012,Mystery,3.37,Josh Oreck,279,21,28
+Robert Downey Jr,I Am Iron Man,2008,Documentary,3.62,Jon Mefford,246,8,32
+Robert Downey Jr,Equilibrium,2004,Romance,3.08,Steven Soderbergh,72,17,9
+Josh Brolin,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612294,118620,220372
+Josh Brolin,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525548,124182,186219
+Josh Brolin,Guardians of the Galaxy,2014,Adventure,3.84,James Gunn,695103,100808,233583
+Josh Brolin,No Country for Old Men,2007,Drama,4.28,Joel Coen,398790,77509,136801
+Josh Brolin,Avengers: Age of Ultron,2015,Science Fiction,3.09,Joss Whedon,502295,70293,93963
+Josh Brolin,Deadpool 2,2018,Action,3.5,David Leitch,377836,53567,96703
+Josh Brolin,Sicario,2015,Crime,3.89,Denis Villeneuve,254170,44663,72306
+Josh Brolin,Inherent Vice,2014,Mystery,3.57,Paul Thomas Anderson,114061,37745,27095
+Josh Brolin,"Hail, Caesar!",2016,Mystery,3.21,Joel Coen,151588,31460,25969
+Josh Brolin,True Grit,2010,Drama,3.74,Joel Coen,180411,31160,38641
+Josh Brolin,The Goonies,1985,Adventure,3.75,Richard Donner,183608,21548,43716
+Josh Brolin,Men in Black 3,2012,Comedy,2.97,Barry Sonnenfeld,180353,9499,18946
+Josh Brolin,Sicario: Day of the Soldado,2018,Crime,3.18,Stefano Sollima,58387,12363,9870
+Josh Brolin,Milk,2008,History,3.68,Gus Van Sant,73280,13107,11572
+Josh Brolin,American Gangster,2007,Drama,3.61,Ridley Scott,78862,10132,13033
+Josh Brolin,Everest,2015,Drama,3.15,Baltasar Kormákur,69532,7675,7813
+Josh Brolin,Planet Terror,2007,Action,3.3,Robert Rodriguez,77440,8036,12612
+Josh Brolin,Sin City: A Dame to Kill For,2014,Action,2.77,Robert Rodriguez,63976,6319,6215
+Josh Brolin,Gangster Squad,2013,Crime,2.72,Ruben Fleischer,63906,5733,5616
+Josh Brolin,Grindhouse,2007,Action,3.62,Robert Rodriguez,54336,6139,9360
+Josh Brolin,Oldboy,2013,Thriller,2.13,Spike Lee,31171,3772,1937
+Josh Brolin,Only the Brave,2017,Drama,3.72,Joseph Kosinski,19687,6241,4885
+Josh Brolin,Hollow Man,2000,Science Fiction,2.6,Paul Verhoeven,43689,3912,3002
+Josh Brolin,Mimic,1997,Horror,2.87,Guillermo del Toro,22968,4662,2591
+Josh Brolin,Wall Street: Money Never Sleeps,2010,Crime,2.67,Oliver Stone,24057,2138,1274
+Josh Brolin,Jonah Hex,2010,Action,1.69,Jimmy Hayward,19146,2912,574
+Josh Brolin,Labor Day,2013,Drama,2.96,Jason Reitman,12812,2127,1398
+Josh Brolin,W.,2008,Drama,2.83,Oliver Stone,14545,1932,998
+Josh Brolin,You Will Meet a Tall Dark Stranger,2010,Drama,2.74,Woody Allen,13166,2043,784
+Josh Brolin,Once Upon a Deadpool,2018,Action,3.1,David Leitch,8239,2651,1514
+Josh Brolin,Into the Blue,2005,Adventure,2.43,John Stockwell,16203,1062,831
+Josh Brolin,Flirting with Disaster,1996,Comedy,3.39,David O. Russell,8244,2160,1269
+Josh Brolin,In the Valley of Elah,2007,History,3.31,Paul Haggis,10296,1171,978
+Josh Brolin,To Each His Own Cinema,2007,Comedy,3.4,Aki Kaurismäki,4173,872,543
+Josh Brolin,Melinda and Melinda,2004,Drama,2.9,Woody Allen,10366,2062,793
+Josh Brolin,Woody Allen: A Documentary,2011,Documentary,3.64,Robert B. Weide,6380,667,954
+Josh Brolin,The Legacy of a Whitetail Deer Hunter,2018,Comedy,2.64,Jody Hill,3290,1357,329
+Josh Brolin,Nightwatch,1997,Drama,2.88,Ole Bornedal,5934,929,488
+Josh Brolin,The Dead Girl,2006,Crime,3.11,Karen Moncrieff,2506,597,220
+Josh Brolin,Thrashin',1986,Action,3.11,David Winters,1724,561,319
+Josh Brolin,Everything in This Dream,2015,Mystery,3.59,Paul Thomas Anderson,1501,487,353
+Josh Brolin,The Mod Squad,1999,Thriller,2.11,Scott Silver,3204,415,99
+Josh Brolin,Best Laid Plans,1999,Crime,2.79,Mike Barker,1357,216,93
+Josh Brolin,Bed of Roses,1996,Romance,2.68,Michael Goldenberg,1852,257,138
+Josh Brolin,Women in Trouble,2009,Comedy,2.71,Sebastián Gutiérrez,862,181,68
+Josh Brolin,Fantastic Flesh: The Art of Make-Up EFX,2008,Documentary,3.5,Kevin VanHook,439,138,75
+Josh Brolin,The Road Killers,1994,Thriller,2.7,Deran Sarafian,245,91,18
+Josh Brolin,Hawaiian: The Legend of Eddie Aikau,2013,Documentary,3.38,Sam George,257,94,47
+Josh Brolin,No Country for Old Men: Josh Brolin's Unauthorized Behind the Scenes,2008,Documentary,3.52,Josh Brolin,291,22,64
+Josh Brolin,The People Speak,2009,History,3.51,Chris Moore,104,35,18
+Josh Brolin,It's the Rage,1999,Comedy,2.57,James D. Stern,206,58,10
+Josh Brolin,Coastlines,2002,Drama,2.98,Victor Nunez,100,48,5
+Josh Brolin,Slow Burn,2000,Adventure,2.93,Christian Ford,92,26,4
+Josh Brolin,"Milwaukee, Minnesota",2003,Drama,3.12,Allan Mindel,93,49,7
+Josh Brolin,Unchained: The Untold Story of Freestyle Motocross,2016,Documentary,3.42,Jon Freeman,63,19,13
+Chris Hemsworth,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612295,118620,220372
+Chris Hemsworth,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525551,124182,186220
+Chris Hemsworth,Thor: Ragnarok,2017,Adventure,3.82,Taika Waititi,522490,102479,181112
+Chris Hemsworth,The Avengers,2012,Science Fiction,3.69,Joss Whedon,634599,101139,164888
+Chris Hemsworth,Doctor Strange,2016,Fantasy,3.43,Scott Derrickson,491973,70029,119588
+Chris Hemsworth,Avengers: Age of Ultron,2015,Science Fiction,3.09,Joss Whedon,502296,70293,93963
+Chris Hemsworth,Thor,2011,Fantasy,2.97,Kenneth Branagh,437441,59565,63845
+Chris Hemsworth,Thor: The Dark World,2013,Fantasy,2.6,Alan Taylor,358349,57323,41580
+Chris Hemsworth,The Cabin in the Woods,2011,Horror,3.51,Drew Goddard,292789,38372,69941
+Chris Hemsworth,Bad Times at the El Royale,2018,Thriller,3.49,Drew Goddard,119878,25831,30457
+Chris Hemsworth,Star Trek,2009,Adventure,3.62,J.J. Abrams,222711,20269,43229
+Chris Hemsworth,Star Trek Into Darkness,2013,Adventure,3.29,J.J. Abrams,205078,18304,34708
+Chris Hemsworth,Ghostbusters,2016,Comedy,2.56,Paul Feig,159081,15950,18882
+Chris Hemsworth,Rush,2013,Drama,3.72,Ron Howard,106543,13744,23024
+Chris Hemsworth,Men in Black: International,2019,Science Fiction,2.39,F. Gary Gray,65263,14673,6215
+Chris Hemsworth,Snow White and the Huntsman,2012,Drama,2.52,Rupert Sanders,109696,5908,6443
+Chris Hemsworth,In the Heart of the Sea,2015,Thriller,2.99,Ron Howard,41928,5560,4448
+Chris Hemsworth,Blackhat,2015,Action,2.77,Michael Mann,26546,6969,3279
+Chris Hemsworth,The Huntsman: Winter's War,2016,Drama,2.53,Cedric Nicolas-Troyan,43259,4193,3209
+Chris Hemsworth,Vacation,2015,Comedy,2.47,John Francis Daley,40188,5796,3492
+Chris Hemsworth,Jay and Silent Bob Reboot,2019,Comedy,2.7,Kevin Smith,15380,4347,3219
+Chris Hemsworth,12 Strong,2018,Action,2.87,Nicolai Fuglsig,18973,3958,2464
+Chris Hemsworth,Red Dawn,2012,Action,2.13,Dan Bradley,23089,2069,1279
+Chris Hemsworth,Team Thor,2016,Science Fiction,3.77,Taika Waititi,19269,1030,4007
+Chris Hemsworth,A Perfect Getaway,2009,Mystery,2.98,David Twohy,14257,1710,1655
+Chris Hemsworth,Team Thor: Part 2,2017,Fantasy,3.58,Taika Waititi,14055,853,2349
+Chris Hemsworth,Ca$h,2010,Mystery,2.46,Stephen Milburn Anderson,942,151,40
+Chris Hemsworth,Heroes and Demons,2012,Thriller,2.96,Carlos Cuarón,92,21,5
+Chris Hemsworth,Beyond Boundaries: The Harvey Weinstein Scandal,2018,Documentary,2.59,Jordan Hill,141,25,2
+Chris Hemsworth,Ollie Klublershturf vs. the Nazis,2010,Comedy,3.08,Skot Bright,118,18,11
+Chris Pratt,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612295,118620,220372
+Chris Pratt,Her,2013,Science Fiction,4.09,Spike Jonze,541619,91099,206794
+Chris Pratt,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525551,124183,186220
+Chris Pratt,Guardians of the Galaxy,2014,Adventure,3.84,James Gunn,695105,100809,233584
+Chris Pratt,Guardians of the Galaxy Vol. 2,2017,Science Fiction,3.55,James Gunn,511568,92688,143038
+Chris Pratt,Jurassic World,2015,Science Fiction,2.99,Colin Trevorrow,412493,26012,64769
+Chris Pratt,The Lego Movie,2014,Comedy,3.78,Phil Lord,337238,35614,87005
+Chris Pratt,Jurassic World: Fallen Kingdom,2018,Action,2.6,J. A. Bayona,205532,26659,24107
+Chris Pratt,Passengers,2016,Drama,2.8,Morten Tyldum,174767,13204,21042
+Chris Pratt,Moneyball,2011,Drama,3.74,Bennett Miller,156468,21203,33068
+Chris Pratt,Zero Dark Thirty,2012,Drama,3.61,Kathryn Bigelow,136577,22362,24214
+Chris Pratt,Jennifer's Body,2009,Horror,3.08,Karyn Kusama,123938,20552,22841
+Chris Pratt,The Lego Movie 2: The Second Part,2019,Comedy,3.22,Mike Mitchell,76039,20761,15434
+Chris Pratt,The Magnificent Seven,2016,Action,3.04,Antoine Fuqua,82991,10029,11886
+Chris Pratt,Wanted,2008,Crime,2.9,Timur Bekmambetov,118805,6976,12477
+Chris Pratt,Movie 43,2013,Comedy,1.42,Griffin Dunne,42143,5833,1830
+Chris Pratt,Bride Wars,2009,Romance,2.6,Gary Winick,61375,4079,4338
+Chris Pratt,The Five-Year Engagement,2012,Comedy,2.83,Nicholas Stoller,34145,3495,2872
+Chris Pratt,What's Your Number?,2011,Romance,2.81,Mark Mylod,32659,2930,3236
+Chris Pratt,Delivery Man,2013,Comedy,2.64,Ken Scott,21132,1676,1532
+Chris Pratt,Take Me Home Tonight,2011,Comedy,2.7,Michael Dowse,13503,1872,1209
+Chris Pratt,10 Years,2011,Comedy,2.86,Jamie Linden,7034,982,732
+Chris Pratt,Jem and the Holograms,2015,Drama,1.84,Jon M. Chu,4664,1397,356
+Chris Pratt,The Kid,2019,Western,2.77,Vincent D'Onofrio,3024,1436,438
+Chris Pratt,Strangers with Candy,2006,Comedy,3.01,Paul Dinello,2738,382,323
+Chris Pratt,"Marvel: 75 Years, From Pulp to Pop!",2014,Documentary,3.24,Zak Knutson,948,222,148
+Chris Pratt,Deep in the Valley,2009,Comedy,2.19,Christian Forte,550,69,34
+Chris Pratt,Wieners,2008,Comedy,2.25,Mark Steilen,287,66,15
+Chris Pratt,Celebrating Marvel's Stan Lee,2019,Documentary,3.51,Lily Olszewski,101,8,18
+Chris Pratt,Path of Destruction,2005,Action,2.56,Stephen Furst,59,18,1
+Chris Evans,Knives Out,2019,Mystery,4.04,Rian Johnson,449520,94027,181840
+Chris Evans,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612297,118621,220372
+Chris Evans,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525552,124184,186220
+Chris Evans,Spider-Man: Homecoming,2017,Science Fiction,3.65,Jon Watts,520111,92793,158259
+Chris Evans,The Avengers,2012,Science Fiction,3.69,Joss Whedon,634603,101141,164890
+Chris Evans,Scott Pilgrim vs. the World,2010,Romance,3.89,Edgar Wright,467298,73959,161175
+Chris Evans,Captain America: Civil War,2016,Action,3.61,Anthony Russo,523001,84220,136675
+Chris Evans,Captain Marvel,2019,Science Fiction,3.19,Ryan Fleck,367254,87089,83454
+Chris Evans,Captain America: The Winter Soldier,2014,Action,3.77,Anthony Russo,511417,84493,140855
+Chris Evans,Avengers: Age of Ultron,2015,Science Fiction,3.09,Joss Whedon,502297,70295,93963
+Chris Evans,Ant-Man,2015,Adventure,3.33,Peyton Reed,449748,66554,97188
+Chris Evans,Snowpiercer,2013,Action,3.67,Bong Joon-ho,294289,43302,78856
+Chris Evans,Captain America: The First Avenger,2011,Science Fiction,3.31,Joe Johnston,455788,64925,88437
+Chris Evans,Thor: The Dark World,2013,Fantasy,2.6,Alan Taylor,358349,57324,41580
+Chris Evans,Fantastic Four,2005,Action,2.24,Tim Story,205052,10104,10103
+Chris Evans,Sunshine,2007,Science Fiction,3.61,Danny Boyle,77356,13252,16986
+Chris Evans,Fantastic Four: Rise of the Silver Surfer,2007,Thriller,2.08,Tim Story,151940,8730,6501
+Chris Evans,Gifted,2017,Drama,3.64,Marc Webb,57771,10019,13745
+Chris Evans,Not Another Teen Movie,2001,Comedy,2.61,Joel Gallen,51930,4319,4733
+Chris Evans,Before We Go,2014,Drama,3.12,Chris Evans,25353,3359,4053
+Chris Evans,What's Your Number?,2011,Romance,2.81,Mark Mylod,32659,2930,3236
+Chris Evans,Push,2009,Action,2.69,Paul McGuigan,32217,2268,2815
+Chris Evans,The Losers,2010,Adventure,2.8,Sylvain White,25168,3020,2817
+Chris Evans,The Iceman,2012,Thriller,3.08,Ariel Vromen,16904,2631,2029
+Chris Evans,TMNT,2007,Adventure,2.64,Kevin Munroe,29926,3065,2573
+Chris Evans,Cellular,2004,Action,2.84,David R. Ellis,21384,1853,1847
+Chris Evans,The Nanny Diaries,2007,Romance,2.87,Shari Springer Berman,23517,1728,1767
+Chris Evans,The Red Sea Diving Resort,2019,Drama,2.79,Gideon Raff,7970,1979,1013
+Chris Evans,Street Kings,2008,Thriller,2.92,David Ayer,13149,1458,1167
+Chris Evans,Marvel One-Shot: Agent Carter,2013,Science Fiction,3.65,Louis D'Esposito,10927,1222,1982
+Chris Evans,Playing It Cool,2014,Romance,2.6,Justin Reardon,8648,1150,866
+Chris Evans,The Perfect Score,2004,Comedy,2.55,Brian Robbins,10713,1202,722
+Chris Evans,Puncture,2011,Drama,3.19,Mark Kassen,5172,682,636
+Chris Evans,London,2005,Romance,2.83,Hunter Richards,3129,576,321
+Chris Evans,Battle for Terra,2007,Science Fiction,2.52,Aristomenis Tsirbas,1947,365,100
+Chris Evans,Fierce People,2005,Drama,2.84,Griffin Dunne,1417,258,133
+Chris Evans,The Loss of a Teardrop Diamond,2008,Romance,2.55,Jodie Markell,759,208,58
+Chris Evans,"Marvel: 75 Years, From Pulp to Pop!",2014,Documentary,3.24,Zak Knutson,948,222,148
+Chris Evans,Marvel's Captain America: 75 Heroic Years,2016,Documentary,3.45,Zak Knutson,383,67,66
+Chris Evans,Superpower Dogs,2019,Documentary,3.55,Daniel Ferguson,194,58,49
+Chris Evans,The Newcomers,2000,Family,2.7,James Allen Bradley,85,37,3
+Benedict Cumberbatch,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612299,118621,220375
+Benedict Cumberbatch,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525555,124184,186223
+Benedict Cumberbatch,1917,2019,War,4.1,Sam Mendes,326917,121915,122253
+Benedict Cumberbatch,Thor: Ragnarok,2017,Adventure,3.82,Taika Waititi,522489,102482,181112
+Benedict Cumberbatch,Doctor Strange,2016,Fantasy,3.43,Scott Derrickson,491974,70030,119588
+Benedict Cumberbatch,12 Years a Slave,2013,History,4.06,Steve McQueen,294148,44544,71155
+Benedict Cumberbatch,The Imitation Game,2014,History,3.72,Morten Tyldum,342638,26502,82035
+Benedict Cumberbatch,The Hobbit: An Unexpected Journey,2012,Adventure,3.35,Peter Jackson,357122,21812,59615
+Benedict Cumberbatch,The Hobbit: The Desolation of Smaug,2013,Fantasy,3.33,Peter Jackson,295835,20596,48421
+Benedict Cumberbatch,Star Trek Into Darkness,2013,Adventure,3.29,J.J. Abrams,205079,18306,34708
+Benedict Cumberbatch,Atonement,2007,Drama,3.88,Joe Wright,118557,23396,29422
+Benedict Cumberbatch,Tinker Tailor Soldier Spy,2011,Mystery,3.55,Tomas Alfredson,84478,12454,14747
+Benedict Cumberbatch,Black Mass,2015,Drama,3.02,Scott Cooper,62378,8563,6975
+Benedict Cumberbatch,Between Two Ferns: The Movie,2019,Comedy,2.79,Scott Aukerman,46092,10469,6821
+Benedict Cumberbatch,War Horse,2011,Action,3.2,Steven Spielberg,70881,13480,8667
+Benedict Cumberbatch,The Grinch,2018,Family,2.77,Scott Mosier,43819,8532,5459
+Benedict Cumberbatch,Four Lions,2010,Crime,3.75,Chris Morris,40332,7948,9251
+Benedict Cumberbatch,Zoolander 2,2016,Comedy,1.91,Ben Stiller,45073,5936,2020
+Benedict Cumberbatch,August: Osage County,2013,Drama,3.38,John Wells,35920,5598,5397
+Benedict Cumberbatch,Mowgli: Legend of the Jungle,2018,Drama,2.79,Andy Serkis,31594,5599,3300
+Benedict Cumberbatch,Penguins of Madagascar,2014,Adventure,2.79,Eric Darnell,46105,4463,3983
+Benedict Cumberbatch,Sherlock: The Abominable Bride,2016,Mystery,3.56,Douglas Mackinnon,47079,1648,7045
+Benedict Cumberbatch,The Other Boleyn Girl,2008,Drama,3.01,Justin Chadwick,31114,2700,2693
+Benedict Cumberbatch,The Current War,2017,History,3.05,Alfonso Gomez-Rejon,9513,2756,1500
+Benedict Cumberbatch,The Fifth Estate,2013,Drama,2.65,Bill Condon,13036,1722,836
+Benedict Cumberbatch,Sherlock: The Final Problem,2017,Drama,3.54,Benjamin Caron,21740,833,3314
+Benedict Cumberbatch,Brexit: The Uncivil War,2019,TV Movie,3.11,Toby Haynes,7490,1358,988
+Benedict Cumberbatch,Starter for 10,2006,Drama,3.19,Tom Vaughan,10410,1216,1358
+Benedict Cumberbatch,The Whistleblower,2010,Drama,3.26,Larysa Kondracki,5768,1067,616
+Benedict Cumberbatch,Stuart: A Life Backwards,2007,Drama,3.67,David Attwood,3588,597,788
+Benedict Cumberbatch,National Theatre Live: Frankenstein,2011,Science Fiction,4.06,Danny Boyle,3318,454,929
+Benedict Cumberbatch,Amazing Grace,2006,Drama,3.32,Michael Apted,4924,798,609
+Benedict Cumberbatch,Lennon or McCartney,2014,Documentary,2.38,Matt Schichter,1667,185,123
+Benedict Cumberbatch,Van Gogh: Painted with Words,2010,Drama,3.71,Andrew Hutton,1362,210,230
+Benedict Cumberbatch,Third Star,2010,Drama,3.63,Hattie Dalton,2608,231,491
+Benedict Cumberbatch,Tipping the Velvet,2002,Drama,3.54,Geoffrey Sax,1832,726,304
+Benedict Cumberbatch,Hawking,2004,Drama,3.54,Philip Martin,2415,269,321
+Benedict Cumberbatch,Creation,2009,Drama,3.12,Jon Amiel,2533,357,198
+Benedict Cumberbatch,The Child in Time,2017,TV Movie,3,Julian Farino,1586,350,192
+Benedict Cumberbatch,Wreckers,2011,Drama,2.92,D.R. Hood,1075,211,87
+Benedict Cumberbatch,Parade's End,2012,Drama,3.52,Susanna White,1159,135,129
+Benedict Cumberbatch,The Hollow Crown: Richard III,2016,Drama,3.85,Dominic Cooke,756,164,162
+Benedict Cumberbatch,Inseparable,2007,Drama,3.48,Nick White,895,89,112
+Benedict Cumberbatch,Walk with Me,2017,Documentary,3.11,Marc Francis,493,162,87
+Benedict Cumberbatch,National Theatre Live: Hamlet,2015,Drama,4,Lindsey Turner,759,98,170
+Benedict Cumberbatch,The Tiger Who Came To Tea,2019,Family,3.31,Robin Shaw,413,99,85
+Benedict Cumberbatch,To Kill a King,2003,Action,2.95,Mike Barker,430,109,31
+Benedict Cumberbatch,Small Island,2009,Drama,3.35,John Alexander,328,71,32
+Benedict Cumberbatch,Little Favour,2013,Action,3.23,Patrick Viktor Monroe,568,50,57
+Benedict Cumberbatch,Jerusalem,2013,Documentary,3.38,Daniel Ferguson,289,41,40
+Benedict Cumberbatch,Murder Is Easy,2009,Mystery,3.28,Hettie MacDonald,400,66,39
+Benedict Cumberbatch,South Pacific,2009,Documentary,3.84,Jonathan Clay,205,49,46
+Benedict Cumberbatch,Shakespeare Live! From the RSC,2016,Music,3.7,Gregory Doran,215,32,36
+Benedict Cumberbatch,Naples '44,2016,Documentary,3.16,Francesco Patierno,81,45,8
+Benedict Cumberbatch,A Study in Pink (Unaired Pilot),2011,Crime,3.68,Coky Giedroyc,126,24,35
+Chadwick Boseman,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612305,118623,220377
+Chadwick Boseman,Black Panther,2018,Fantasy,3.67,Ryan Coogler,612375,108239,193791
+Chadwick Boseman,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525560,124186,186226
+Chadwick Boseman,Captain America: Civil War,2016,Action,3.61,Anthony Russo,523004,84225,136676
+Chadwick Boseman,21 Bridges,2019,Drama,2.93,Brian Kirk,17547,4716,2821
+Chadwick Boseman,Gods of Egypt,2016,Action,1.93,Alex Proyas,30200,4811,2050
+Chadwick Boseman,42,2013,Drama,3.39,Brian Helgeland,29747,4828,5001
+Chadwick Boseman,Draft Day,2014,Drama,2.93,Ivan Reitman,15855,3664,1991
+Chadwick Boseman,Marshall,2017,Drama,3.33,Reginald Hudlin,7279,2841,1298
+Chadwick Boseman,Get on Up,2014,Drama,3.17,Tate Taylor,7700,1899,1059
+Chadwick Boseman,Message from the King,2016,Thriller,2.86,Fabrice Du Welz,3931,1022,509
+Chadwick Boseman,The Express,2008,Drama,3.17,Gary Fleder,2453,624,273
+Paul Rudd,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525561,124186,186226
+Paul Rudd,Captain America: Civil War,2016,Action,3.61,Anthony Russo,523004,84226,136676
+Paul Rudd,Ant-Man,2015,Adventure,3.33,Peyton Reed,449751,66560,97188
+Paul Rudd,The Perks of Being a Wallflower,2012,Drama,3.79,Stephen Chbosky,384818,63631,109028
+Paul Rudd,Ant-Man and the Wasp,2018,Comedy,3.2,Peyton Reed,307222,73329,63787
+Paul Rudd,Clueless,1995,Comedy,3.72,Amy Heckerling,263647,33811,66188
+Paul Rudd,This Is the End,2013,Comedy,3.16,Seth Rogen,235631,22432,41742
+Paul Rudd,Anchorman: The Legend of Ron Burgundy,2004,Comedy,3.5,Adam McKay,213123,17826,39873
+Paul Rudd,Sausage Party,2016,Fantasy,2.47,Conrad Vernon,187099,16388,18659
+Paul Rudd,The 40 Year Old Virgin,2005,Comedy,3.3,Judd Apatow,216748,21558,30344
+Paul Rudd,Night at the Museum,2006,Adventure,2.98,Shawn Levy,284906,11160,26813
+Paul Rudd,Romeo + Juliet,1996,Drama,3.26,Baz Luhrmann,188299,18372,30211
+Paul Rudd,Forgetting Sarah Marshall,2008,Drama,3.31,Nicholas Stoller,125723,12060,19289
+Paul Rudd,Knocked Up,2007,Romance,3.11,Judd Apatow,136431,12037,14384
+Paul Rudd,Anchorman 2: The Legend Continues,2013,Comedy,2.77,Adam McKay,113500,10559,12022
+Paul Rudd,Wet Hot American Summer,2001,Comedy,3.53,David Wain,64461,10903,14031
+Paul Rudd,Monsters vs Aliens,2009,Science Fiction,2.59,Conrad Vernon,116577,7542,7835
+Paul Rudd,Between Two Ferns: The Movie,2019,Comedy,2.79,Scott Aukerman,46094,10469,6822
+Paul Rudd,The Fundamentals of Caring,2016,Comedy,3.41,Rob Burnett,60959,6914,11468
+Paul Rudd,"I Love You, Man",2009,Comedy,3.31,John Hamburg,75190,6814,10777
+Paul Rudd,The Little Prince,2015,Fantasy,3.72,Mark Osborne,49426,8164,11968
+Paul Rudd,Walk Hard: The Dewey Cox Story,2007,Music,3.54,Jake Kasdan,44813,6466,10173
+Paul Rudd,Role Models,2008,Comedy,3.13,David Wain,63223,6542,7996
+Paul Rudd,This Is 40,2012,Comedy,2.86,Judd Apatow,55933,5812,5136
+Paul Rudd,Mute,2018,Mystery,2.18,Duncan Jones,25325,6722,1990
+Paul Rudd,Dinner for Schmucks,2010,Comedy,2.45,Jay Roach,52818,5800,3808
+Paul Rudd,They Came Together,2014,Comedy,3.13,David Wain,24041,5067,4007
+Paul Rudd,A Futile and Stupid Gesture,2018,Comedy,3.09,David Wain,20766,4703,3642
+Paul Rudd,Year One,2009,Adventure,1.83,Harold Ramis,45730,2556,1837
+Paul Rudd,Halloween: The Curse of Michael Myers,1995,Thriller,2.14,Joe Chappelle,26264,9206,2367
+Paul Rudd,Our Idiot Brother,2011,Comedy,2.94,Jesse Peretz,29056,2255,2996
+Paul Rudd,Prince Avalanche,2013,Comedy,3.25,David Gordon Green,15279,3179,2395
+Paul Rudd,The Cider House Rules,1999,Drama,3.31,Lasse Hallström,21673,3676,2402
+Paul Rudd,Wanderlust,2012,Comedy,2.68,David Wain,23223,2362,1881
+Paul Rudd,How Do You Know,2010,Comedy,2.3,James L. Brooks,17114,2182,919
+Paul Rudd,Admission,2013,Comedy,2.52,Paul Weitz,15555,1676,786
+Paul Rudd,Ideal Home,2018,Drama,3.19,Andrew Fleming,4385,1304,934
+Paul Rudd,"Wake Up, Ron Burgundy: The Lost Movie",2004,Comedy,3.07,Adam McKay,10110,638,835
+Paul Rudd,Reno 911!: Miami,2007,Action,2.87,Ben Garant,8265,769,876
+Paul Rudd,The Object of My Affection,1998,Romance,2.84,Nicholas Hytner,6307,1100,589
+Paul Rudd,Wet Hot American Summer: Ten Years Later,2017,Comedy,3.28,David Wain,7164,482,997
+Paul Rudd,200 Cigarettes,1999,Romance,2.89,Risa Bramon Garcia,4919,805,562
+Paul Rudd,I Could Never Be Your Woman,2007,Romance,2.74,Amy Heckerling,4079,959,374
+Paul Rudd,The Catcher Was a Spy,2018,Drama,2.64,Ben Lewin,2186,751,229
+Paul Rudd,The Shape of Things,2003,Comedy,3.2,Neil LaBute,3143,651,373
+Paul Rudd,Fun Mom Dinner,2017,Comedy,2.46,Alethea Jones,3088,690,295
+Paul Rudd,The Ten,2007,Comedy,2.63,David Wain,4547,572,365
+Paul Rudd,Hurricane of Fun: The Making of Wet Hot,2015,Documentary,3.38,Amy Rice,3364,428,538
+Paul Rudd,Over Her Dead Body,2008,Comedy,2.16,Jeff Lowell,4677,473,140
+Paul Rudd,The Ex,2006,Romance,2.17,Jesse Peretz,3657,329,94
+Paul Rudd,The Baxter,2005,Comedy,3.2,Michael Showalter,2424,458,359
+Paul Rudd,All Is Bright,2013,Drama,2.63,Phil Morrison,1648,385,125
+Paul Rudd,Overnight Delivery,1998,Comedy,2.8,Jason Bloom,1981,334,227
+Paul Rudd,Mansome,2012,Documentary,2.52,Morgan Spurlock,2217,203,111
+Paul Rudd,Nerdland,2016,Animation,2.45,Chris Prynoski,1101,268,101
+Paul Rudd,Diggers,2006,Comedy,3.07,Katherine Dieckmann,756,208,75
+Paul Rudd,P.S.,2004,Romance,2.8,Dylan Kidd,889,168,53
+Paul Rudd,The Oh in Ohio,2006,Comedy,2.56,Billy Kent,944,206,44
+Paul Rudd,Anyone Can Quantum,2016,Comedy,3.45,Alex Winter,604,14,104
+Paul Rudd,Runaway Daughters,1994,Comedy,3.05,Joe Dante,244,130,28
+Paul Rudd,The Great Gatsby,2000,Romance,2.55,Robert Markowitz,579,210,37
+Paul Rudd,Bumping Mics with Jeff Ross & Dave Attell,2018,Comedy,3.65,Andrew Jarecki,558,72,118
+Paul Rudd,Rush: Time Stand Still,2016,Documentary,3.82,Dale Heslip,359,68,106
+Paul Rudd,The Château,2001,Comedy,2.71,Jesse Peretz,314,76,28
+Paul Rudd,Gen-Y Cops,2000,Action,2.66,Benny Chan,287,104,29
+Paul Rudd,Two Days,2003,Drama,3.03,Sean McGinly,271,71,32
+Paul Rudd,The Locusts,1997,Romance,2.86,John Patrick Kelley,208,70,23
+Paul Rudd,The Secret Policeman's Ball,2012,Comedy,3.21,Ryan Polito,115,5,10
+Paul Rudd,Monty Python Conquers America,2008,Documentary,3.34,Will Yapp,93,45,20
+Paul Rudd,Moment of Truth: Stalking Back,1993,TV Movie,3.23,Corey Allen,62,57,9
+Don Cheadle,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612307,118632,220378
+Don Cheadle,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525563,124190,186226
+Don Cheadle,Captain America: Civil War,2016,Action,3.61,Anthony Russo,523008,84230,136677
+Don Cheadle,Captain Marvel,2019,Science Fiction,3.19,Ryan Fleck,367258,87101,83456
+Don Cheadle,Avengers: Age of Ultron,2015,Science Fiction,3.09,Joss Whedon,502300,70304,93965
+Don Cheadle,Iron Man 3,2013,Action,3.11,Shane Black,435575,64671,73570
+Don Cheadle,Iron Man 2,2010,Adventure,2.9,Jon Favreau,429956,59472,57394
+Don Cheadle,Ocean's Eleven,2001,Crime,3.78,Steven Soderbergh,289535,25264,63126
+Don Cheadle,Boogie Nights,1997,Drama,4.16,Paul Thomas Anderson,169461,41226,51904
+Don Cheadle,Ocean's Twelve,2004,Crime,3.11,Steven Soderbergh,165944,10956,19667
+Don Cheadle,Ocean's Thirteen,2007,Crime,3.21,Steven Soderbergh,128039,9480,15759
+Don Cheadle,Flight,2012,Drama,3.33,Robert Zemeckis,91074,8103,12100
+Don Cheadle,Crash,2004,Drama,2.96,Paul Haggis,91309,12660,9167
+Don Cheadle,Hotel Rwanda,2004,War,3.72,Terry George,70513,7164,9616
+Don Cheadle,Traffic,2000,Drama,3.63,Steven Soderbergh,53401,12583,7948
+Don Cheadle,Rush Hour 2,2001,Comedy,3.07,Brett Ratner,81254,4402,8728
+Don Cheadle,Out of Sight,1998,Romance,3.67,Steven Soderbergh,35995,8476,7515
+Don Cheadle,The Guard,2011,Crime,3.6,John Michael McDonagh,22942,3484,4532
+Don Cheadle,Swordfish,2001,Action,2.65,Dominic Sena,38994,2591,2641
+Don Cheadle,The Family Man,2000,Fantasy,3.03,Brett Ratner,26427,2467,2767
+Don Cheadle,Reign Over Me,2007,Drama,3.32,Mike Binder,16981,2073,2286
+Don Cheadle,Hotel for Dogs,2009,Comedy,2.31,Thor Freudenthal,32686,2435,1579
+Don Cheadle,Mission to Mars,2000,Science Fiction,2.6,Brian De Palma,20452,2609,1355
+Don Cheadle,Volcano,1997,Action,2.44,Mick Jackson,24367,1895,1481
+Don Cheadle,Devil in a Blue Dress,1995,Thriller,3.5,Carl Franklin,8189,2621,1649
+Don Cheadle,Bulworth,1998,Comedy,3.18,Warren Beatty,8970,1892,1187
+Don Cheadle,Miles Ahead,2015,Drama,3.1,Don Cheadle,5828,1805,803
+Don Cheadle,Brooklyn's Finest,2009,Crime,2.99,Antoine Fuqua,8336,1141,727
+Don Cheadle,Colors,1988,Action,3.23,Dennis Hopper,7186,1262,995
+Don Cheadle,Hamburger Hill,1987,Action,3.2,John Irvin,5733,1264,710
+Don Cheadle,The United States of Leland,2003,Crime,3.18,Matthew Ryan Hoge,5198,785,587
+Don Cheadle,After the Sunset,2004,Action,2.68,Brett Ratner,6509,668,378
+Don Cheadle,Traitor,2008,Crime,3.04,Jeffrey Nachmanoff,5485,686,391
+Don Cheadle,Kevin Hart: What Now?,2016,Comedy,3,Tim Story,4757,712,638
+Don Cheadle,The Assassination of Richard Nixon,2004,Drama,3.26,Niels Mueller,3767,695,327
+Don Cheadle,Manic,2001,Drama,3.4,Jordan Melamed,2816,484,408
+Don Cheadle,Talk to Me,2007,Drama,3.35,Kasi Lemmons,2011,727,313
+Don Cheadle,The Meteor Man,1993,Science Fiction,2.36,Robert Townsend,3798,607,295
+Don Cheadle,Rosewood,1997,History,3.33,John Singleton,1756,624,267
+Don Cheadle,Fail Safe,2000,Drama,3.41,Stephen Frears,994,251,149
+Don Cheadle,Things Behind the Sun,2001,Drama,3.36,Allison Anders,406,161,80
+Don Cheadle,Moving Violations,1985,Comedy,2.76,Neal Israel,957,252,116
+Don Cheadle,Ticker,2002,Action,3.34,Joe Carnahan,1167,117,133
+Don Cheadle,The Rat Pack,1998,TV Movie,2.92,Rob Cohen,643,137,64
+Don Cheadle,Roadside Prophets,1992,Adventure,3.16,Abbe Wool,314,156,61
+Don Cheadle,Rebound: The Legend of Earl 'The Goat' Manigault,1996,Drama,3.38,Eriq La Salle,304,150,45
+Don Cheadle,The People Speak,2009,History,3.51,Chris Moore,104,35,18
+Don Cheadle,Kingdom Come,2011,Comedy,3.28,Paiman Kalayeh,99,50,13
+Don Cheadle,A Man's Story,2010,Documentary,3.03,Varon Bonicos,78,60,7
+Don Cheadle,A Lesson Before Dying,1999,Drama,3.04,Joseph Sargent,168,65,17
+Don Cheadle,King Leopold's Ghost,2006,Documentary,3.5,Pippa Scott,91,81,17
+Don Cheadle,Darfur Now,2007,Documentary,3.29,Ted Braun,121,100,9
+Jeremy Renner,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525566,124193,186227
+Jeremy Renner,Arrival,2016,Drama,4.09,Denis Villeneuve,548838,90255,210248
+Jeremy Renner,The Avengers,2012,Science Fiction,3.69,Joss Whedon,634610,101152,164892
+Jeremy Renner,Captain America: Civil War,2016,Action,3.61,Anthony Russo,523009,84230,136677
+Jeremy Renner,Avengers: Age of Ultron,2015,Science Fiction,3.09,Joss Whedon,502301,70305,93965
+Jeremy Renner,Thor,2011,Fantasy,2.97,Kenneth Branagh,437445,59575,63845
+Jeremy Renner,American Hustle,2013,Drama,3.28,David O. Russell,238638,22599,36410
+Jeremy Renner,Mission: Impossible - Rogue Nation,2015,Adventure,3.61,Christopher McQuarrie,182728,26329,37919
+Jeremy Renner,Wind River,2017,Drama,3.79,Taylor Sheridan,113773,27646,30810
+Jeremy Renner,Mission: Impossible - Ghost Protocol,2011,Thriller,3.63,Brad Bird,184808,23184,36284
+Jeremy Renner,The Hurt Locker,2008,Drama,3.69,Kathryn Bigelow,151570,23647,26831
+Jeremy Renner,The Assassination of Jesse James by the Coward Robert Ford,2007,Drama,3.93,Andrew Dominik,80627,21738,19976
+Jeremy Renner,Tag,2018,Drama,2.95,Jeff Tomsic,85561,16045,14088
+Jeremy Renner,The Town,2010,Crime,3.59,Ben Affleck,113598,14955,20526
+Jeremy Renner,28 Weeks Later,2007,Horror,3.15,Juan Carlos Fresnadillo,80651,8772,9878
+Jeremy Renner,The Bourne Legacy,2012,Thriller,2.77,Tony Gilroy,75432,6424,5905
+Jeremy Renner,The Immigrant,2013,Drama,3.49,James Gray,24164,6608,4203
+Jeremy Renner,Hansel & Gretel: Witch Hunters,2013,Horror,2.48,Tommy Wirkola,64113,4756,5042
+Jeremy Renner,The House,2017,Comedy,2.44,Andrew J. Cohen,25364,6041,2195
+Jeremy Renner,S.W.A.T.,2003,Thriller,2.57,Clark Johnson,35483,1962,2148
+Jeremy Renner,Lords of Dogtown,2005,Action,3.43,Catherine Hardwicke,22074,3591,3884
+Jeremy Renner,Kill the Messenger,2014,Crime,3.21,Michael Cuesta,9200,1705,1212
+Jeremy Renner,North Country,2005,Drama,3.37,Niki Caro,7023,1683,777
+Jeremy Renner,Dahmer,2002,Horror,2.72,David Jacobson,3844,1069,342
+Jeremy Renner,The Heart is Deceitful Above All Things,2004,Drama,2.9,Asia Argento,2342,648,267
+Jeremy Renner,Arctic Dogs,2019,Adventure,1.69,Aaron Woodley,891,1063,67
+Jeremy Renner,12 and Holding,2005,Drama,3.43,Michael Cuesta,1108,360,148
+Jeremy Renner,Senior Trip,1995,Comedy,2.5,Kelly Makin,1347,346,113
+Jeremy Renner,Neo Ned,2005,Romance,3,Van Fischer,395,139,44
+Jeremy Renner,A Little Trip to Heaven,2005,Drama,2.67,Baltasar Kormákur,520,217,21
+Jeremy Renner,Ingenious,2009,Comedy,2.75,Jeff Balsmeyer,307,68,20
+Jeremy Renner,Take,2008,Thriller,2.81,Charles Oliver,236,87,22
+Jeremy Renner,Code Red: The Making of '28 Weeks Later',2007,Documentary,3.21,Andrea Lewis,418,26,32
+Jeremy Renner,The World Wars,2014,Documentary,3.58,John Ealer,129,46,30
+Jeremy Renner,Love Comes to the Executioner,2006,Romance,2.91,Kyle Bergersen,107,27,12
+Mark Ruffalo,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612312,118635,220379
+Mark Ruffalo,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525568,124195,186227
+Mark Ruffalo,Thor: Ragnarok,2017,Adventure,3.82,Taika Waititi,522495,102491,181117
+Mark Ruffalo,Eternal Sunshine of the Spotless Mind,2004,Drama,4.2,Michel Gondry,496506,96056,185359
+Mark Ruffalo,The Avengers,2012,Science Fiction,3.69,Joss Whedon,634611,101153,164893
+Mark Ruffalo,Captain Marvel,2019,Science Fiction,3.19,Ryan Fleck,367261,87104,83456
+Mark Ruffalo,Shutter Island,2010,Thriller,3.93,Martin Scorsese,459812,54349,128845
+Mark Ruffalo,Zodiac,2007,Mystery,3.99,David Fincher,364385,57360,105456
+Mark Ruffalo,Avengers: Age of Ultron,2015,Science Fiction,3.09,Joss Whedon,502302,70306,93965
+Mark Ruffalo,Iron Man 3,2013,Action,3.11,Shane Black,435575,64673,73570
+Mark Ruffalo,Spotlight,2015,Thriller,3.98,Tom McCarthy,269527,47515,71883
+Mark Ruffalo,Now You See Me,2013,Crime,3.14,Louis Leterrier,298563,14006,45780
+Mark Ruffalo,Collateral,2004,Thriller,3.76,Michael Mann,123942,24234,27328
+Mark Ruffalo,Now You See Me 2,2016,Action,2.84,Jon M. Chu,156827,8961,17991
+Mark Ruffalo,13 Going on 30,2004,Romance,3.33,Gary Winick,171849,14799,27316
+Mark Ruffalo,Begin Again,2013,Music,3.55,John Carney,101259,12363,22622
+Mark Ruffalo,Foxcatcher,2014,Drama,3.45,Bennett Miller,86258,14164,14133
+Mark Ruffalo,Where the Wild Things Are,2009,Science Fiction,3.39,Spike Jonze,109766,14023,18280
+Mark Ruffalo,Dark Waters,2019,Drama,3.68,Todd Haynes,34495,10500,8520
+Mark Ruffalo,The Kids Are All Right,2010,Drama,3.34,Lisa Cholodenko,62855,10058,7519
+Mark Ruffalo,Date Night,2010,Comedy,2.78,Shawn Levy,80554,4107,5895
+Mark Ruffalo,Margaret,2011,Drama,3.78,Kenneth Lonergan,14234,7491,3545
+Mark Ruffalo,The Brothers Bloom,2008,Adventure,3.43,Rian Johnson,22611,4547,4542
+Mark Ruffalo,Just Like Heaven,2005,Drama,3.07,Mark Waters,35097,2973,3649
+Mark Ruffalo,You Can Count on Me,2000,Drama,3.86,Kenneth Lonergan,12150,3756,2815
+Mark Ruffalo,The Normal Heart,2014,Drama,3.8,Ryan Murphy,15890,2885,3478
+Mark Ruffalo,Blindness,2008,Thriller,3.26,Fernando Meirelles,18687,2376,2212
+Mark Ruffalo,Team Thor,2016,Science Fiction,3.77,Taika Waititi,19269,1030,4007
+Mark Ruffalo,Rumor Has It...,2005,Comedy,2.36,Rob Reiner,19494,1427,928
+Mark Ruffalo,In the Cut,2003,Thriller,2.94,Jane Campion,7510,2412,1023
+Mark Ruffalo,Infinitely Polar Bear,2014,Comedy,3.37,Maya Forbes,6246,1949,1156
+Mark Ruffalo,Windtalkers,2002,Action,2.67,John Woo,13840,1589,912
+Mark Ruffalo,The Last Castle,2001,Drama,3.18,Rod Lurie,11437,1056,1343
+Mark Ruffalo,Thanks for Sharing,2012,Comedy,2.82,Stuart Blumberg,7569,881,629
+Mark Ruffalo,54,1998,Drama,2.68,Mark Christopher,9194,1130,629
+Mark Ruffalo,My Life Without Me,2003,Drama,3.58,Isabel Coixet,5971,1281,1094
+Mark Ruffalo,View from the Top,2003,Romance,2.38,Bruno Barreto,11005,891,589
+Mark Ruffalo,Ride with the Devil,1999,Drama,3.22,Ang Lee,3933,1785,516
+Mark Ruffalo,The Dentist,1996,Thriller,2.68,Brian Yuzna,3980,1315,435
+Mark Ruffalo,Reservation Road,2007,Drama,3.01,Terry George,4219,550,323
+Mark Ruffalo,Lennon or McCartney,2014,Documentary,2.38,Matt Schichter,1667,185,123
+Mark Ruffalo,All the King's Men,2006,Thriller,2.58,Steven Zaillian,3350,501,173
+Mark Ruffalo,John Leguizamo's Latin History for Morons,2018,Comedy,3.5,Aram Rappaport,1860,493,433
+Mark Ruffalo,Safe Men,1998,Crime,2.99,John Hamburg,1453,419,192
+Mark Ruffalo,We Don't Live Here Anymore,2004,Romance,2.97,John Curran,1756,329,134
+Mark Ruffalo,What Doesn't Kill You,2008,Drama,2.97,Brian Goodman,1407,307,112
+Mark Ruffalo,Committed,2000,Comedy,2.4,Lisa Krueger,937,200,50
+Mark Ruffalo,XX/XY,2002,Comedy,2.82,Austin Chick,603,174,37
+Mark Ruffalo,Chicago 10,2007,Documentary,3.33,Brett Morgen,356,189,43
+Mark Ruffalo,Letters to Jackie: Remembering President Kennedy,2013,Documentary,3.36,Bill Couturié,97,49,14
+Mark Ruffalo,Mirror Mirror 2: Raven Dance,1994,Horror,2.4,Jimmy Lifton,249,246,23
+Mark Ruffalo,Sympathy for Delicious,2011,Drama,2.7,Mark Ruffalo,339,132,21
+Mark Ruffalo,Journey to the Oscars,2016,Documentary,2.9,John Hirsch,496,34,13
+Mark Ruffalo,Beyond Boundaries: The Harvey Weinstein Scandal,2018,Documentary,2.59,Jordan Hill,141,25,2
+Mark Ruffalo,There Goes My Baby,1994,Comedy,3.1,Floyd Mutrux,129,93,20
+Mark Ruffalo,Kingdom Come,2011,Comedy,3.28,Paiman Kalayeh,99,50,13
+Mark Ruffalo,"Mirror, Mirror III: The Voyeur",1995,Horror,2.44,Rachel Gordon,77,135,3
+Mark Ruffalo,On the Second Day of Christmas,1997,Family,2.96,James Frawley,111,82,13
+Mark Ruffalo,Apartment 12,2001,Romance,2.66,Dan Bootzin,123,27,6
+Mark Ruffalo,Celebrating Marvel's Stan Lee,2019,Documentary,3.51,Lily Olszewski,101,8,18
+Mark Ruffalo,Happening: A Clean Energy Revolution,2017,Documentary,3.2,James Redford,47,28,6
+Mark Ruffalo,This is Zodiac,2007,Documentary,3.54,Julie Ng,79,7,15
+Mark Ruffalo,Houdini,1998,Drama,3.08,Pen Densham,56,15,2
+Sebastian Stan,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612313,118632,220379
+Sebastian Stan,Black Panther,2018,Fantasy,3.67,Ryan Coogler,612382,108252,193792
+Sebastian Stan,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525570,124191,186227
+Sebastian Stan,Black Swan,2010,Drama,4.02,Darren Aronofsky,463028,67756,136903
+Sebastian Stan,Captain America: Civil War,2016,Action,3.61,Anthony Russo,523011,84232,136678
+Sebastian Stan,The Martian,2015,Drama,3.72,Ridley Scott,512562,44340,141827
+Sebastian Stan,Captain America: The Winter Soldier,2014,Action,3.77,Anthony Russo,511422,84502,140857
+Sebastian Stan,"I, Tonya",2017,Drama,3.81,Craig Gillespie,280155,45477,81852
+Sebastian Stan,Ant-Man,2015,Adventure,3.33,Peyton Reed,449755,66564,97188
+Sebastian Stan,Captain America: The First Avenger,2011,Science Fiction,3.31,Joe Johnston,455791,64933,88437
+Sebastian Stan,Logan Lucky,2017,Drama,3.53,Steven Soderbergh,134270,31899,32452
+Sebastian Stan,Hot Tub Time Machine,2010,Comedy,2.75,Steve Pink,77785,4979,7325
+Sebastian Stan,Destroyer,2018,Action,3.15,Karyn Kusama,21821,7711,3642
+Sebastian Stan,Rachel Getting Married,2008,Drama,3.56,Jonathan Demme,27691,5576,4546
+Sebastian Stan,Ricki and the Flash,2015,Comedy,2.81,Jonathan Demme,14838,2851,1480
+Sebastian Stan,We Have Always Lived in the Castle,2018,Drama,2.89,Stacie Passon,6728,2680,987
+Sebastian Stan,71 Fragments of a Chronology of Chance,1994,Drama,3.59,Michael Haneke,6678,2824,1154
+Sebastian Stan,The Covenant,2006,Fantasy,2.04,Renny Harlin,12511,1845,962
+Sebastian Stan,Gone,2012,Thriller,2.56,Heitor Dhalia,10890,1112,645
+Sebastian Stan,The Bronze,2015,Comedy,2.67,Bryan Buckley,5915,1246,687
+Sebastian Stan,"Endings, Beginnings",2019,Drama,2.53,Drake Doremus,2372,1317,279
+Sebastian Stan,Spread,2009,Romance,2.28,David Mackenzie,6082,476,284
+Sebastian Stan,The Last Full Measure,2019,Drama,2.96,Todd Robinson,1854,928,326
+Sebastian Stan,The Apparition,2012,Horror,1.54,Todd Lincoln,5188,1016,132
+Sebastian Stan,I'm Not Here,2017,Drama,2.76,Michelle Schumacher,864,324,116
+Sebastian Stan,The Education of Charlie Banks,2007,Thriller,2.88,Fred Durst,1564,257,134
+Sebastian Stan,Red Doors,2005,Comedy,2.98,Georgia Lee,348,187,45
+Sebastian Stan,The Architect,2006,Drama,2.55,Matt Tauber,401,147,27
+Sebastian Stan,Tony n' Tina's Wedding,2004,Comedy,2.29,Roger Paradiso,187,166,11
+Sebastian Stan,Joseph Pulitzer: Voice of the People,2018,Documentary,3.27,Oren Rudavsky,64,61,5
+Danai Gurira,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612313,118633,220379
+Danai Gurira,Black Panther,2018,Fantasy,3.67,Ryan Coogler,612384,108253,193793
+Danai Gurira,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525570,124192,186227
+Danai Gurira,Ghost Town,2008,Fantasy,2.84,David Koepp,19269,1540,1466
+Danai Gurira,The Visitor,2007,Drama,3.62,Tom McCarthy,9325,2291,1519
+Danai Gurira,All Eyez on Me,2017,Drama,2.43,Benny Boom,7908,1700,711
+Danai Gurira,My Soul to Take,2010,Horror,2.24,Wes Craven,8322,2335,705
+Danai Gurira,Tinker Bell and the Legend of the NeverBeast,2014,Animation,3.25,Steve Loter,7367,924,784
+Danai Gurira,Mother of George,2013,Drama,3.55,Andrew Dosunmu,1049,1017,237
+Danai Gurira,Restless City,2012,Romance,3.22,Andrew Dosunmu,107,105,9
+Danai Gurira,The Robot Chicken Walking Dead Special: Look Who's Walking,2017,Comedy,3.41,Tom Sheppard,378,98,81
+Danai Gurira,3 Backyards,2010,Drama,2.95,Eric Mendelsohn,141,47,14
+Danai Gurira,The Walking Dead: A Decade of Dead,2013,Documentary,3.68,Lex Halaby,144,45,25
+Zoe Saldana,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612314,118634,220379
+Zoe Saldana,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525570,124192,186227
+Zoe Saldana,Guardians of the Galaxy,2014,Adventure,3.84,James Gunn,695119,100831,233588
+Zoe Saldana,Guardians of the Galaxy Vol. 2,2017,Science Fiction,3.55,James Gunn,511576,92708,143040
+Zoe Saldana,Avatar,2009,Adventure,3.27,James Cameron,527407,38071,79121
+Zoe Saldana,Pirates of the Caribbean: The Curse of the Black Pearl,2003,Action,3.75,Gore Verbinski,426259,28898,84069
+Zoe Saldana,Star Trek,2009,Adventure,3.62,J.J. Abrams,222712,20272,43228
+Zoe Saldana,Star Trek Into Darkness,2013,Adventure,3.29,J.J. Abrams,205079,18310,34708
+Zoe Saldana,Star Trek Beyond,2016,Adventure,3.32,Justin Lin,145189,18929,26630
+Zoe Saldana,The Terminal,2004,Comedy,3.47,Steven Spielberg,154221,15045,25264
+Zoe Saldana,Missing Link,2019,Fantasy,3.27,Chris Butler,32808,14070,7127
+Zoe Saldana,The Book of Life,2014,Adventure,3.43,Jorge R. Gutierrez,46472,5949,8942
+Zoe Saldana,Out of the Furnace,2013,Thriller,3.21,Scott Cooper,28034,3871,3909
+Zoe Saldana,Live by Night,2016,Thriller,2.67,Ben Affleck,17063,3952,1658
+Zoe Saldana,The Losers,2010,Adventure,2.8,Sylvain White,25168,3020,2817
+Zoe Saldana,I Kill Giants,2017,Fantasy,3.04,Anders Walter,12548,2413,1962
+Zoe Saldana,Vantage Point,2008,Crime,2.76,Pete Travis,26661,2022,1631
+Zoe Saldana,Colombiana,2011,Crime,2.81,Olivier Megaton,19963,1941,1756
+Zoe Saldana,Death at a Funeral,2010,Comedy,2.52,Neil LaBute,17703,1496,1296
+Zoe Saldana,"Love, Antosha",2019,Documentary,4.13,Garret Price,2675,2724,1074
+Zoe Saldana,Crossroads,2002,Drama,2.22,Tamra Davis,18038,2136,1195
+Zoe Saldana,The Words,2012,Thriller,3.05,Brian Klugman,11575,1149,1286
+Zoe Saldana,Infinitely Polar Bear,2014,Comedy,3.37,Maya Forbes,6246,1949,1156
+Zoe Saldana,Guess Who,2005,Romance,2.48,Kevin Rodney Sullivan,14714,928,774
+Zoe Saldana,Takers,2010,Action,2.61,John Luessenhop,9936,1115,825
+Zoe Saldana,Center Stage,2000,Drama,3.19,Nicholas Hytner,7504,2034,1295
+Zoe Saldana,Drumline,2002,Drama,2.81,Charles Stone III,10964,1173,1013
+Zoe Saldana,Get Over It,2001,Comedy,2.66,Tommy O'Haver,6079,961,551
+Zoe Saldana,For the Love of Spock,2016,Documentary,3.64,Adam Nimoy,4094,760,973
+Zoe Saldana,My Little Pony: The Movie,2017,Fantasy,2.87,Jayson Thiessen,3806,1247,588
+Zoe Saldana,Blood Ties,2013,Thriller,2.91,Guillaume Canet,3310,496,272
+Zoe Saldana,This Changes Everything,2018,Documentary,3.8,Tom Donahue,932,764,246
+Zoe Saldana,Lennon or McCartney,2014,Documentary,2.38,Matt Schichter,1667,185,123
+Zoe Saldana,After Sex,2007,Drama,2.4,Eric Amadio,1647,216,94
+Zoe Saldana,Unity,2015,Documentary,2.97,Shaun Monson,383,218,50
+Zoe Saldana,Nina,2016,Drama,2.25,Cynthia Mort,840,371,73
+Zoe Saldana,Dirty Deeds,2005,Drama,2.47,David Kendall,998,145,62
+Zoe Saldana,Haven,2004,Crime,2.73,Frank E. Flowers,718,111,29
+Zoe Saldana,Burning Palms,2010,Comedy,2.64,Christopher Landon,307,135,23
+Zoe Saldana,The Skeptic,2009,Thriller,2.6,Tennyson Bardwell,405,100,19
+Zoe Saldana,The Legend of Red Hand,2018,Mystery,3.33,Stefano Sollima,73,1,6
+Zoe Saldana,Capturing Avatar,2010,Documentary,3.53,Laurent Bouzereau,168,14,25
+Vin Diesel,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612314,118634,220380
+Vin Diesel,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525571,124190,186227
+Vin Diesel,Guardians of the Galaxy,2014,Adventure,3.84,James Gunn,695120,100832,233588
+Vin Diesel,Guardians of the Galaxy Vol. 2,2017,Science Fiction,3.55,James Gunn,511577,92708,143042
+Vin Diesel,Saving Private Ryan,1998,War,4.17,Steven Spielberg,343412,48727,90982
+Vin Diesel,The Iron Giant,1999,Animation,4.16,Brad Bird,215537,28314,64276
+Vin Diesel,Ralph Breaks the Internet,2018,Comedy,3.21,Rich Moore,156369,24968,27916
+Vin Diesel,Furious 7,2015,Thriller,3.19,James Wan,141452,17667,20889
+Vin Diesel,The Fast and the Furious,2001,Thriller,3.11,Rob Cohen,161972,13237,20363
+Vin Diesel,The Fate of the Furious,2017,Crime,2.9,F. Gary Gray,106972,16400,13929
+Vin Diesel,Fast Five,2011,Crime,3.36,Justin Lin,127000,15020,19662
+Vin Diesel,Fast & Furious 6,2013,Action,3.1,Justin Lin,120695,13330,15234
+Vin Diesel,The Fast and the Furious: Tokyo Drift,2006,Thriller,2.76,Justin Lin,114726,10348,12956
+Vin Diesel,2 Fast 2 Furious,2003,Thriller,2.64,John Singleton,113737,10181,10656
+Vin Diesel,Fast & Furious,2009,Drama,2.81,Justin Lin,106212,9588,9638
+Vin Diesel,Awakenings,1990,Drama,3.77,Penny Marshall,34546,6011,7014
+Vin Diesel,The Pacifier,2005,Comedy,2.35,Adam Shankman,79675,3879,4727
+Vin Diesel,Pitch Black,2000,Science Fiction,3.28,David Twohy,49403,5657,7887
+Vin Diesel,xXx: Return of Xander Cage,2017,Action,2.32,D.J. Caruso,31458,4442,2785
+Vin Diesel,xXx,2002,Action,2.47,Rob Cohen,52836,2966,3136
+Vin Diesel,Riddick,2013,Action,2.8,David Twohy,39953,3355,3905
+Vin Diesel,The Chronicles of Riddick,2004,Action,2.81,David Twohy,45057,3264,4260
+Vin Diesel,The Last Witch Hunter,2015,Science Fiction,2.39,Breck Eisner,24394,2627,1909
+Vin Diesel,Billy Lynn's Long Halftime Walk,2016,Drama,2.86,Ang Lee,9745,3110,1063
+Vin Diesel,Presumed Innocent,1990,Thriller,3.31,Alan J. Pakula,10005,1615,1224
+Vin Diesel,Babylon A.D.,2008,Adventure,2.27,Mathieu Kassovitz,14219,1160,614
+Vin Diesel,Boiler Room,2000,Crime,3.2,Ben Younger,10178,1334,1301
+Vin Diesel,Find Me Guilty,2006,Drama,3.26,Sidney Lumet,4316,747,487
+Vin Diesel,A Man Apart,2003,Drama,2.61,F. Gary Gray,6312,642,404
+Vin Diesel,Knockaround Guys,2001,Thriller,2.67,Brian Koppelman,3560,500,239
+Vin Diesel,The Chronicles of Riddick: Dark Fury,2004,Thriller,2.97,Peter Chung,2876,501,358
+Vin Diesel,Los Bandoleros,2009,Drama,2.67,Vin Diesel,2053,260,197
+Vin Diesel,Turbo Charged Prelude to 2 Fast 2 Furious,2003,Action,2.31,Philip G. Atwell,2080,271,167
+Vin Diesel,Multi-Facial,1995,Drama,3.58,Vin Diesel,727,110,172
+Vin Diesel,Riddick: Blindsided,2013,Science Fiction,2.79,Bonner Bellew,414,64,38
+Vin Diesel,Strays,1997,Drama,2.87,Vin Diesel,257,245,38
+Vin Diesel,The Giant's Dream: The Making of the Iron Giant,2016,Documentary,3.85,Anthony Giacchino,264,93,98
+Vin Diesel,The Making of 'The Iron Giant',2000,Documentary,3.43,Kevin Gill,173,29,30
+Vin Diesel,Into Pitch Black,2000,Action,2.94,M. David Melvin,179,59,13
+Tessa Thompson,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525572,124190,186227
+Tessa Thompson,Thor: Ragnarok,2017,Adventure,3.82,Taika Waititi,522499,102494,181118
+Tessa Thompson,Annihilation,2018,Science Fiction,3.62,Alex Garland,319298,73441,88899
+Tessa Thompson,Sorry to Bother You,2018,Comedy,3.75,Boots Riley,167327,42276,52273
+Tessa Thompson,Creed,2015,Drama,3.81,Ryan Coogler,179993,35686,46465
+Tessa Thompson,Creed II,2018,Drama,3.51,Steven Caple Jr.,75464,21314,18123
+Tessa Thompson,Selma,2014,Drama,3.78,Ava DuVernay,80269,18948,16348
+Tessa Thompson,Men in Black: International,2019,Science Fiction,2.39,F. Gary Gray,65265,14677,6215
+Tessa Thompson,Between Two Ferns: The Movie,2019,Comedy,2.79,Scott Aukerman,46094,10467,6822
+Tessa Thompson,Dear White People,2014,Comedy,3.43,Justin Simien,26555,4846,4469
+Tessa Thompson,Lady and the Tramp,2019,Romance,2.81,Charlie Bean,14465,4508,2153
+Tessa Thompson,Dirty Computer,2018,Romance,4.17,Emma Westenberg,9705,2733,3807
+Tessa Thompson,Little Woods,2018,Drama,3.39,Nia DaCosta,5259,3161,1144
+Tessa Thompson,When a Stranger Calls,2006,Horror,2.3,Simon West,20365,2464,1207
+Tessa Thompson,War on Everyone,2016,Action,2.72,John Michael McDonagh,7090,2012,859
+Tessa Thompson,For Colored Girls,2010,Drama,3.07,Tyler Perry,1487,534,221
+Tessa Thompson,Furlough,2018,Comedy,2.67,Laurie Collyer,743,349,77
+Tessa Thompson,Mississippi Damned,2009,Drama,3.61,Tina Mabry,392,375,85
+Tessa Thompson,Make It Happen,2008,Drama,2.35,Darren Grant,1261,467,59
+Tessa Thompson,100 Years,2017,Animation,3.14,Lena Dunham,271,82,16
+Tessa Thompson,The Initiation of Sarah,2006,Horror,2.52,Stuart Gillard,271,130,17
+Tessa Thompson,The Making of Annihilation,2018,Documentary,3.4,Jon Mefford,230,11,42
+Tessa Thompson,The Human Contract,2008,Drama,2.51,Jada Pinkett Smith,176,72,7
+Tessa Thompson,Murder on the 13th Floor,2012,Thriller,2.71,Hanelle M. Culpepper,74,54,3
+Elizabeth Olsen,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612315,118636,220381
+Elizabeth Olsen,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525572,124189,186227
+Elizabeth Olsen,Captain America: Civil War,2016,Action,3.61,Anthony Russo,523013,84234,136679
+Elizabeth Olsen,Captain America: The Winter Soldier,2014,Action,3.77,Anthony Russo,511424,84505,140857
+Elizabeth Olsen,Avengers: Age of Ultron,2015,Science Fiction,3.09,Joss Whedon,502307,70307,93967
+Elizabeth Olsen,Godzilla,2014,Action,2.99,Gareth Edwards,197590,19336,28760
+Elizabeth Olsen,Wind River,2017,Drama,3.79,Taylor Sheridan,113773,27646,30810
+Elizabeth Olsen,Ingrid Goes West,2017,Drama,3.39,Matt Spicer,76459,20750,16438
+Elizabeth Olsen,Kill Your Darlings,2013,Drama,3.48,John Krokidas,44362,7754,9692
+Elizabeth Olsen,Martha Marcy May Marlene,2011,Thriller,3.64,Sean Durkin,31332,8638,6243
+Elizabeth Olsen,Oldboy,2013,Thriller,2.13,Spike Lee,31172,3774,1937
+Elizabeth Olsen,Liberal Arts,2012,Drama,3.04,Josh Radnor,16683,1936,2130
+Elizabeth Olsen,Red Lights,2012,Thriller,2.71,Rodrigo Cortés,11885,1386,1026
+Elizabeth Olsen,Kodachrome,2017,Drama,3.14,Mark Raso,6647,1549,1278
+Elizabeth Olsen,Silent House,2011,Horror,2.54,Chris Kentis,9733,2015,719
+Elizabeth Olsen,Very Good Girls,2013,Drama,2.62,Naomi Foner Gyllenhaal,7910,1115,608
+Elizabeth Olsen,I Saw the Light,2015,Music,2.58,Marc Abraham,3749,1211,336
+Elizabeth Olsen,In Secret,2013,Thriller,2.73,Charlie Stratton,3352,767,289
+Elizabeth Olsen,"Peace, Love & Misunderstanding",2011,Comedy,2.6,Bruce Beresford,2582,357,178
+Elizabeth Olsen,How the West Was Fun,1994,Family,2.4,Stuart Margolin,2353,139,77
+Elizabeth Olsen,Celebrating Marvel's Stan Lee,2019,Documentary,3.51,Lily Olszewski,101,8,18
+Brie Larson,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525572,124191,186227
+Brie Larson,Scott Pilgrim vs. the World,2010,Romance,3.89,Edgar Wright,467314,73991,161180
+Brie Larson,Captain Marvel,2019,Science Fiction,3.19,Ryan Fleck,367263,87110,83456
+Brie Larson,Room,2015,Thriller,4.05,Lenny Abrahamson,324194,49211,97544
+Brie Larson,21 Jump Street,2012,Comedy,3.51,Phil Lord,331680,20608,65293
+Brie Larson,Kong: Skull Island,2017,Action,3.02,Jordan Vogt-Roberts,193186,24958,31390
+Brie Larson,Short Term 12,2013,Drama,4.12,Destin Daniel Cretton,89735,24230,31136
+Brie Larson,The Spectacular Now,2013,Drama,3.31,James Ponsoldt,122585,25878,20314
+Brie Larson,13 Going on 30,2004,Romance,3.33,Gary Winick,171850,14799,27316
+Brie Larson,Don Jon,2013,Drama,2.95,Joseph Gordon-Levitt,111350,8220,12684
+Brie Larson,Trainwreck,2015,Comedy,2.85,Judd Apatow,104281,10144,11574
+Brie Larson,Free Fire,2016,Mystery,3.22,Ben Wheatley,52330,15580,10900
+Brie Larson,Just Mercy,2019,Crime,3.82,Destin Daniel Cretton,34344,22247,10376
+Brie Larson,Unicorn Store,2017,Comedy,3,Brie Larson,42449,14797,8504
+Brie Larson,Between Two Ferns: The Movie,2019,Comedy,2.79,Scott Aukerman,46094,10466,6822
+Brie Larson,Greenberg,2010,Comedy,3.14,Noah Baumbach,25489,5326,3200
+Brie Larson,The Glass Castle,2017,Drama,3.27,Destin Daniel Cretton,16263,3769,2836
+Brie Larson,The Gambler,2014,Crime,2.69,Rupert Wyatt,17235,2349,1471
+Brie Larson,Sleepover,2004,Comedy,2.65,Joe Nussbaum,16698,2277,1571
+Brie Larson,Digging for Fire,2015,Drama,2.99,Joe Swanberg,6229,1747,830
+Brie Larson,Rampart,2011,Drama,2.87,Oren Moverman,7625,1457,662
+Brie Larson,Harmontown,2014,Documentary,3.37,Neil Berkeley,5620,575,1077
+Brie Larson,Tanner Hall,2009,Drama,2.58,Francesca Gregorini,3245,784,303
+Brie Larson,Hoot,2006,Family,2.2,Wil Shriner,9685,677,422
+Brie Larson,Fantastic Fungi,2019,Documentary,3.53,Louie Schwartzberg,1737,217,446
+Brie Larson,Basmati Blues,2017,Romance,1.8,Dan Baron,769,283,52
+Brie Larson,Remember the Daze,2007,Comedy,2.57,Jessica Manafort,906,54,91
+Brie Larson,Right on Track,2003,TV Movie,2.63,Duwayne Dunham,2511,406,118
+Brie Larson,Weighting,2011,Comedy,3.44,Brie Larson,746,206,165
+Brie Larson,The Trouble with Bliss,2011,Comedy,2.33,Michael Knowles,555,98,23
+Brie Larson,Farce of the Penguins,2006,Comedy,1.79,Bob Saget,973,186,31
+Brie Larson,Bitter Orange,2013,Crime,2.69,Hope Larson,455,286,41
+Brie Larson,House Broken,2009,Comedy,1.96,Sam Harper,376,86,13
+Brie Larson,The Babysitter,2008,Comedy,2.05,David H. Steinberg,285,46,9
+Brie Larson,Journey to the Oscars,2016,Documentary,2.9,John Hirsch,496,34,13
+Brie Larson,Just Peck,2009,Comedy,2.83,Michael A. Nickles,272,64,15
+Brie Larson,Madison,2001,Drama,2.96,William Bindley,168,96,10
+Bradley Cooper,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612315,118637,220381
+Bradley Cooper,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525572,124198,186227
+Bradley Cooper,Guardians of the Galaxy,2014,Adventure,3.84,James Gunn,695122,100841,233590
+Bradley Cooper,Guardians of the Galaxy Vol. 2,2017,Science Fiction,3.55,James Gunn,511577,92712,143042
+Bradley Cooper,A Star Is Born,2018,Romance,3.68,Bradley Cooper,314243,56940,85080
+Bradley Cooper,Silver Linings Playbook,2012,Drama,3.6,David O. Russell,366762,34681,77198
+Bradley Cooper,10 Cloverfield Lane,2016,Science Fiction,3.61,Dan Trachtenberg,267701,34526,67905
+Bradley Cooper,The Hangover,2009,Comedy,3.39,Todd Phillips,359967,17916,55828
+Bradley Cooper,American Hustle,2013,Drama,3.28,David O. Russell,238640,22600,36410
+Bradley Cooper,The Place Beyond the Pines,2012,Drama,3.72,Derek Cianfrance,130948,20914,33415
+Bradley Cooper,American Sniper,2014,War,3.15,Clint Eastwood,187863,17223,26918
+Bradley Cooper,Limitless,2011,Science Fiction,3.24,Neil Burger,162706,8812,22980
+Bradley Cooper,The Hangover Part II,2011,Comedy,2.64,Todd Phillips,186542,7421,14240
+Bradley Cooper,Yes Man,2008,Comedy,2.93,Peyton Reed,151525,7745,14271
+Bradley Cooper,Joy,2015,Comedy,3.04,David O. Russell,85183,9533,10058
+Bradley Cooper,War Dogs,2016,Drama,3.19,Todd Phillips,82256,10168,11778
+Bradley Cooper,The Hangover Part III,2013,Comedy,2.42,Todd Phillips,124899,6328,8419
+Bradley Cooper,The Mule,2018,Thriller,3.21,Clint Eastwood,49232,10629,9054
+Bradley Cooper,Wedding Crashers,2005,Romance,3.04,David Dobkin,123948,7076,13042
+Bradley Cooper,Wet Hot American Summer,2001,Comedy,3.53,David Wain,64462,10903,14031
+Bradley Cooper,He's Just Not That Into You,2009,Comedy,2.73,Ken Kwapis,65897,5930,6127
+Bradley Cooper,The A-Team,2010,Crime,2.72,Joe Carnahan,68300,4247,6062
+Bradley Cooper,Valentine's Day,2010,Comedy,2.36,Garry Marshall,68982,4167,3848
+Bradley Cooper,Burnt,2015,Comedy,2.9,John Wells,33606,3243,3747
+Bradley Cooper,Aloha,2015,Drama,2.16,Cameron Crowe,31526,4139,1884
+Bradley Cooper,Failure to Launch,2006,Comedy,2.31,Tom Dey,33038,2357,1651
+Bradley Cooper,The Midnight Meat Train,2008,Mystery,2.76,Ryûhei Kitamura,20819,3357,2293
+Bradley Cooper,Case 39,2009,Thriller,2.64,Christian Alvart,22551,2029,1411
+Bradley Cooper,The Words,2012,Thriller,3.05,Brian Klugman,11575,1149,1286
+Bradley Cooper,Serena,2014,Drama,2.29,Susanne Bier,9567,1510,466
+Bradley Cooper,"New York, I Love You",2008,Drama,2.76,Natalie Portman,13090,1122,767
+Bradley Cooper,The Rocker,2008,Music,2.61,Peter Cattaneo,13293,1198,1027
+Bradley Cooper,All About Steve,2009,Comedy,1.87,Phil Traill,14895,1231,631
+Bradley Cooper,Hit & Run,2012,Romance,2.76,Dax Shepard,6609,1047,677
+Bradley Cooper,Lennon or McCartney,2014,Documentary,2.38,Matt Schichter,1667,185,123
+Bradley Cooper,My Little Eye,2002,Horror,2.62,Marc Evans,2906,803,199
+Bradley Cooper,Hurricane of Fun: The Making of Wet Hot,2015,Documentary,3.38,Amy Rice,3364,428,538
+Bradley Cooper,The Comebacks,2007,Comedy,1.84,Tom Brady,1939,370,95
+Bradley Cooper,Making a Scene,2013,Fantasy,2.92,Janusz Kamiński,589,90,39
+Bradley Cooper,Saturday Night Live 40th Anniversary Special,2015,Comedy,3.65,Don Roy King,1581,2,230
+Bradley Cooper,I Want to Marry Ryan Banks,2004,Romance,2.72,Sheldon Larry,335,65,35
+Bradley Cooper,Older Than America,2008,Thriller,2.86,Georgina Lightning,144,72,8
+Bradley Cooper,"Baby, Baby, Baby",2015,Drama,2.93,Brian Klugman,124,54,18
+Bradley Cooper,One Soldier's Story: The Journey of American Sniper,2015,Documentary,3.22,Gary Leva,347,24,49
+Bradley Cooper,Brother's Justice,2010,Comedy,2.8,Dax Shepard,124,43,8
+Bradley Cooper,Bending All The Rules,2002,Comedy,2.48,Morgan Klein,107,37,4
+Dave Bautista,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612317,118640,220382
+Dave Bautista,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525572,124201,186227
+Dave Bautista,Guardians of the Galaxy,2014,Adventure,3.84,James Gunn,695122,100842,233590
+Dave Bautista,Blade Runner 2049,2017,Science Fiction,4.11,Denis Villeneuve,394102,116625,146173
+Dave Bautista,Guardians of the Galaxy Vol. 2,2017,Science Fiction,3.55,James Gunn,511577,92713,143042
+Dave Bautista,Spectre,2015,Action,3.04,Sam Mendes,230998,49802,29332
+Dave Bautista,Hotel Artemis,2018,Thriller,2.82,Drew Pearce,28114,6685,3916
+Dave Bautista,Stuber,2019,Thriller,2.74,Michael Dowse,26260,7347,4152
+Dave Bautista,Riddick,2013,Action,2.8,David Twohy,39953,3355,3905
+Dave Bautista,The Man with the Iron Fists,2012,Action,2.5,RZA,13620,1780,1268
+Dave Bautista,2048: Nowhere to Run,2017,Action,3.3,Luke Scott,11975,1299,2005
+Dave Bautista,"My Son, My Son, What Have Ye Done",2009,Thriller,3.24,Werner Herzog,6762,1556,1060
+Dave Bautista,Escape Plan 2: Hades,2018,Action,1.7,Steven C. Miller,7034,1127,380
+Dave Bautista,Bushwick,2017,Action,2.53,Cary Murnion,4101,946,464
+Dave Bautista,Master Z: Ip Man Legacy,2018,Action,3.2,Yuen Woo-ping,3146,885,679
+Dave Bautista,Final Score,2018,Action,2.66,Scott Mann,2989,980,369
+Dave Bautista,Heist,2015,Crime,2.65,Scott Mann,3706,524,357
+Dave Bautista,Escape Plan: The Extractors,2019,Thriller,1.98,John Herzfeld,2844,1222,183
+Dave Bautista,Marauders,2016,Action,2.4,Steven C. Miller,2741,633,203
+Dave Bautista,Kickboxer: Vengeance,2016,Drama,2.22,John Stockwell,2524,526,187
+Dave Bautista,The Scorpion King 3: Battle for Redemption,2012,Fantasy,1.79,Roel Reiné,1478,352,74
+Dave Bautista,The Warriors Gate,2016,Action,2.48,Matthias Hoene,797,215,84
+Dave Bautista,Designing the World of Blade Runner 2049,2018,Documentary,3.68,Len Ciccotello,459,129,70
+Dave Bautista,L.A. Slasher,2015,Comedy,2.05,Martin Owen,198,157,10
+Dave Bautista,Wrong Side of Town,2010,Crime,1.84,David DeFalco,375,78,20
+Dave Bautista,House of the Rising Sun,2011,Action,2.32,Brian Miller,251,77,11
+Dave Bautista,WWE Extreme Rules 2014,2014,Action,3.26,Kevin Dunn,227,39,25
+Dave Bautista,WWE Royal Rumble 2005,2005,Drama,3.41,Kevin Dunn,199,11,27
+Dave Bautista,WWE Royal Rumble 2004,2004,Drama,3.58,Kevin Dunn,181,10,33
+Dave Bautista,WWE Payback 2014,2014,Action,3.21,Kevin Dunn,152,36,19
+Dave Bautista,WWE Royal Rumble 2010,2010,Action,3.46,Kevin Dunn,184,9,22
+Dave Bautista,WWE Royal Rumble 2003,2003,Drama,3.41,Kevin Dunn,139,56,22
+Dave Bautista,WWE SummerSlam 2005,2005,Action,3.39,Kevin Dunn,130,90,16
+Dave Bautista,WWE SummerSlam 2004,2004,Drama,3.37,Kevin Dunn,112,159,17
+Dave Bautista,WWE Survivor Series 2007,2007,Action,3.37,Kevin Dunn,133,99,17
+Dave Bautista,WWE Survivor Series 2004,2004,Drama,3.25,Kevin Dunn,126,14,10
+Dave Bautista,WWE: Top 50 Superstars of All Time,2010,Documentary,3.36,Kevin Dunn,92,6,12
+Dave Bautista,WWE Survivor Series 2005,2005,Drama,3.35,Kevin Dunn,106,10,15
+Dave Bautista,WWE Survivor Series 2006,2006,Action,3.27,Kevin Dunn,120,139,13
+Dave Bautista,WWE SummerSlam 2007,2007,Action,3.18,Kevin Dunn,119,8,11
+Dave Bautista,WWE Extreme Rules 2010,2010,Action,3.25,Kevin Dunn,115,8,11
+Dave Bautista,WWE New Year's Revolution 2005,2005,Action,3.22,Kevin Dunn,91,14,10
+Dave Bautista,WWE Elimination Chamber 2010,2010,Action,3.32,Kevin Dunn,99,4,9
+Dave Bautista,WWE Extreme Rules 2009,2009,Action,3.38,Kevin Dunn,100,38,9
+Dave Bautista,WWE Survivor Series 2009,2009,Action,3.35,Kevin Dunn,106,61,10
+Dave Bautista,WWE SummerSlam 2008,2008,Drama,3.33,Kevin Dunn,104,14,12
+Dave Bautista,WWE Hell in a Cell 2009,2009,Action,3.24,Kevin Dunn,97,46,8
+Dave Bautista,WWE Vengeance: Night of Champions 2007,2007,Action,3.17,Kevin Dunn,107,4,8
+Dave Bautista,WWE Backlash 2009,2009,Action,3.38,Kevin Dunn,95,9,8
+Tom Hiddleston,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612319,118641,220382
+Tom Hiddleston,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525574,124203,186227
+Tom Hiddleston,Thor: Ragnarok,2017,Adventure,3.82,Taika Waititi,522502,102500,181119
+Tom Hiddleston,The Avengers,2012,Science Fiction,3.69,Joss Whedon,634615,101159,164893
+Tom Hiddleston,Thor,2011,Fantasy,2.97,Kenneth Branagh,437449,59582,63845
+Tom Hiddleston,Thor: The Dark World,2013,Fantasy,2.6,Alan Taylor,358352,57340,41580
+Tom Hiddleston,Midnight in Paris,2011,Fantasy,3.72,Woody Allen,245070,30325,60581
+Tom Hiddleston,Kong: Skull Island,2017,Action,3.02,Jordan Vogt-Roberts,193187,24958,31390
+Tom Hiddleston,Crimson Peak,2015,Romance,3.25,Guillermo del Toro,122076,20852,23520
+Tom Hiddleston,Only Lovers Left Alive,2013,Romance,3.77,Jim Jarmusch,82656,20951,25129
+Tom Hiddleston,War Horse,2011,Action,3.2,Steven Spielberg,70881,13478,8667
+Tom Hiddleston,High-Rise,2015,Drama,3,Ben Wheatley,37958,9640,5190
+Tom Hiddleston,Muppets Most Wanted,2014,Adventure,2.94,James Bobin,37753,5376,4212
+Tom Hiddleston,Early Man,2018,Animation,2.87,Nick Park,18028,5488,2401
+Tom Hiddleston,The Deep Blue Sea,2011,Romance,3.32,Terence Davies,10439,2892,1596
+Tom Hiddleston,Unrelated,2007,Drama,3.5,Joanna Hogg,3144,1290,688
+Tom Hiddleston,Archipelago,2010,Drama,3.4,Joanna Hogg,2787,1254,516
+Tom Hiddleston,Leading Lady Parts,2018,Comedy,4,Jessica Swale,5314,695,1171
+Tom Hiddleston,I Saw the Light,2015,Music,2.58,Marc Abraham,3749,1211,336
+Tom Hiddleston,Conspiracy,2001,Drama,3.68,Frank Pierson,4346,869,760
+Tom Hiddleston,Tinker Bell and the Pirate Fairy,2014,Animation,2.99,Peggy Holmes,7992,1035,734
+Tom Hiddleston,Exhibition,2013,Drama,3.26,Joanna Hogg,1951,985,291
+Tom Hiddleston,The Hollow Crown: Henry V,2012,History,3.82,Thea Sharrock,1644,305,343
+Tom Hiddleston,The Hollow Crown: Henry IV - Part 1,2012,History,3.79,Richard Eyre,1823,303,345
+Tom Hiddleston,Unity,2015,Documentary,2.97,Shaun Monson,383,218,50
+Tom Hiddleston,The Hollow Crown: Henry IV - Part 2,2012,History,3.73,Richard Eyre,1467,286,257
+Tom Hiddleston,National Theatre Live: Coriolanus,2014,Drama,3.98,Josie Rourke,1139,311,319
+Tom Hiddleston,Miss Austen Regrets,2008,Drama,3.26,Jeremy Lovering,1055,227,116
+Tom Hiddleston,The Gathering Storm,2002,Drama,3.41,Richard Loncraine,729,181,107
+Tom Hiddleston,Out of Time,2012,Science Fiction,2.98,Josh Appignanesi,275,35,18
+Tom Hiddleston,Friend Request Pending,2011,Comedy,3.21,Chris Foggin,335,48,29
+Tom Hiddleston,Stars In Shorts,2012,Comedy,3.21,Rupert Friend,112,45,8
+Tom Hiddleston,Out of Darkness,2013,Drama,3.55,Manjinder Virk,113,26,19
+Tom Hiddleston,Faceless Killers,2010,Thriller,3.37,Hettie MacDonald,393,38,39
+Tom Hiddleston,Firewall,2008,Thriller,3.36,Niall MacCormick,418,22,42
+Tom Hiddleston,One Step Behind,2008,Crime,3.44,Philip Martin,407,18,39
+Tom Hiddleston,The Life and Adventures of Nicholas Nickleby,2001,Drama,3.32,Stephen Whittaker,146,30,14
+Tom Hiddleston,Celebrating Marvel's Stan Lee,2019,Documentary,3.51,Lily Olszewski,101,8,18
+Tom Hiddleston,Sidetracked,2008,Mystery,3.38,Philip Martin,197,19,22
+Tom Hiddleston,Creating a King: Summoning a God,2017,Documentary,3.3,Jason Marvel,98,17,13
+Pom Klementieff,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612319,118642,220382
+Pom Klementieff,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525575,124204,186228
+Pom Klementieff,Uncut Gems,2019,Drama,4.02,Josh Safdie,339152,86336,124064
+Pom Klementieff,Guardians of the Galaxy Vol. 2,2017,Science Fiction,3.55,James Gunn,511579,92715,143043
+Pom Klementieff,Ingrid Goes West,2017,Drama,3.39,Matt Spicer,76459,20750,16438
+Pom Klementieff,The Addams Family,2019,Animation,2.63,Conrad Vernon,20843,7829,2716
+Pom Klementieff,Oldboy,2013,Thriller,2.13,Spike Lee,31172,3774,1937
+Pom Klementieff,Newness,2017,Romance,2.97,Drake Doremus,9600,1210,1351
+Pom Klementieff,Delicacy,2011,Drama,3.3,Stéphane Foenkinos,3947,512,553
+Pom Klementieff,Sleepless Night,2011,Thriller,3.43,Frédéric Jardin,1880,521,353
+Pom Klementieff,Love Lasts Three Years,2011,Romance,2.85,Frédéric Beigbeder,1076,101,106
+Pom Klementieff,Paris or Perish,2013,Comedy,2.73,Reem Kherici,499,66,43
+Pom Klementieff,Time of Day,2018,Drama,3.04,Thimios Bakatakis,173,46,27
+Pom Klementieff,Radiostars,2012,Comedy,3.04,Romain Lévy,407,64,37
+Pom Klementieff,Porn in the Hood,2012,Comedy,2.47,Franck Gastambide,371,27,22
+Pom Klementieff,After Him,2007,Drama,3.1,Gaël Morel,147,52,11
+Pom Klementieff,Alteration,2017,Science Fiction,3.13,Jérôme Blanquet,99,47,11
+Pom Klementieff,Hacker's Game,2015,Thriller,2.84,Cyril Morin,57,21,4
+Pom Klementieff,Loup,2009,Adventure,3.26,Nicolas Vanier,80,24,8
+Pom Klementieff,The Easy Way,2008,Crime,3.07,Jean-Paul Rouve,101,21,10
+Pom Klementieff,Borderline,2011,Action,3.07,Alexandre Coffre,86,34,1
+Scarlett Johansson,Avengers: Infinity War,2018,Adventure,3.93,Anthony Russo,612521,118954,220442
+Scarlett Johansson,Her,2013,Romance,4.09,Spike Jonze,541806,91466,206861
+Scarlett Johansson,Avengers: Endgame,2019,Adventure,3.93,Anthony Russo,525762,124536,186285
+Scarlett Johansson,Jojo Rabbit,2019,Comedy,4.02,Taika Waititi,342675,115970,138852
+Scarlett Johansson,Marriage Story,2019,Drama,4.06,Noah Baumbach,365233,93801,132588
+Scarlett Johansson,Thor: Ragnarok,2017,Adventure,3.82,Taika Waititi,522638,102721,181158
+Scarlett Johansson,The Avengers,2012,Science Fiction,3.69,Joss Whedon,634782,101364,164928
+Scarlett Johansson,Captain America: Civil War,2016,Science Fiction,3.61,Anthony Russo,523150,84459,136714
+Scarlett Johansson,Captain Marvel,2019,Action,3.19,Ryan Fleck,367385,87297,83483
+Scarlett Johansson,Captain America: The Winter Soldier,2014,Action,3.77,Anthony Russo,511553,84764,140894
+Scarlett Johansson,Avengers: Age of Ultron,2015,Action,3.09,Joss Whedon,502433,70446,93990
+Scarlett Johansson,Isle of Dogs,2018,Adventure,3.91,Wes Anderson,254129,65181,88631
+Scarlett Johansson,Lost in Translation,2003,Comedy,3.92,Sofia Coppola,316817,54836,95547
+Scarlett Johansson,The Prestige,2006,Drama,4.11,Christopher Nolan,358620,51794,111247
+Scarlett Johansson,Iron Man 2,2010,Adventure,2.9,Jon Favreau,430083,59661,57409
+Scarlett Johansson,Under the Skin,2013,Drama,3.69,Jonathan Glazer,160728,49796,44330
+Scarlett Johansson,"Hail, Caesar!",2016,Mystery,3.21,Joel Coen,151627,31534,25972
+Scarlett Johansson,Lucy,2014,Science Fiction,2.71,Luc Besson,236482,12999,26186
+Scarlett Johansson,The Jungle Book,2016,Drama,3.33,Jon Favreau,201451,21969,32006
+Scarlett Johansson,Chef,2014,Comedy,3.58,Jon Favreau,117171,13903,27642
+Scarlett Johansson,Ghost in the Shell,2017,Thriller,2.68,Rupert Sanders,109337,14039,11786
+Scarlett Johansson,Ghost World,2001,Drama,3.67,Terry Zwigoff,81810,16217,19960
+Scarlett Johansson,Don Jon,2013,Drama,2.95,Joseph Gordon-Levitt,111369,8240,12684
+Scarlett Johansson,The SpongeBob SquarePants Movie,2004,Family,3.62,Stephen Hillenburg,144935,10225,26075
+Scarlett Johansson,Sing,2016,Comedy,2.94,Garth Jennings,105411,9473,13402
+Scarlett Johansson,Vicky Cristina Barcelona,2008,Drama,3.38,Woody Allen,79895,10128,12095
+Scarlett Johansson,Match Point,2005,Drama,3.62,Woody Allen,72313,9289,12922
+Scarlett Johansson,The Man Who Wasn't There,2001,Thriller,3.8,Joel Coen,41517,12829,9109
+Scarlett Johansson,The Island,2005,Adventure,2.87,Michael Bay,77257,5354,6881
+Scarlett Johansson,He's Just Not That Into You,2009,Comedy,2.73,Ken Kwapis,65908,5953,6128
+Scarlett Johansson,Rough Night,2017,Drama,2.48,Lucia Aniello,34204,7501,3021
+Scarlett Johansson,We Bought a Zoo,2011,Drama,3.01,Cameron Crowe,53381,4445,5826
+Scarlett Johansson,Home Alone 3,1997,Family,1.98,Raja Gosnell,65949,3014,2623
+Scarlett Johansson,Hitchcock,2012,Drama,3.01,Sacha Gervasi,33192,4302,3158
+Scarlett Johansson,The Other Boleyn Girl,2008,Drama,3.01,Justin Chadwick,31117,2702,2691
+Scarlett Johansson,Scoop,2006,Comedy,3,Woody Allen,26806,2915,2632
+Scarlett Johansson,The Black Dahlia,2006,Crime,2.56,Brian De Palma,22014,3099,1283
+Scarlett Johansson,Girl with a Pearl Earring,2003,Drama,3.14,Peter Webber,23407,2385,2160
+Scarlett Johansson,Eight Legged Freaks,2002,Horror,2.44,Ellory Elkayem,25701,2438,2132
+Scarlett Johansson,The Nanny Diaries,2007,Romance,2.87,Shari Springer Berman,23519,1728,1768
+Scarlett Johansson,The Spirit,2008,Action,1.91,Frank Miller,15012,2526,709
+Scarlett Johansson,The Perfect Score,2004,Comedy,2.55,Brian Robbins,10716,1208,722
+Scarlett Johansson,In Good Company,2004,Comedy,2.79,Paul Weitz,11677,970,625
+Scarlett Johansson,The Horse Whisperer,1998,Romance,3.1,Robert Redford,9635,1419,836
+Scarlett Johansson,Woody Allen: A Documentary,2011,Documentary,3.64,Robert B. Weide,6382,667,954
+Scarlett Johansson,North,1994,Fantasy,1.89,Rob Reiner,6405,959,242
+Scarlett Johansson,Just Cause,1995,Action,2.82,Arne Glimcher,5232,629,365
+Scarlett Johansson,A Love Song for Bobby Long,2004,Drama,3.26,Shainee Gabel,3736,589,462
+Scarlett Johansson,A Good Woman,2004,Comedy,2.9,Mike Barker,1579,310,128
+Scarlett Johansson,Manny & Lo,1996,Drama,3.35,Lisa Krueger,807,374,160
+Scarlett Johansson,Floyd Norman: An Animated Life,2016,Documentary,3.53,Michael Fiore,876,219,205
+Scarlett Johansson,"Marvel: 75 Years, From Pulp to Pop!",2014,Documentary,3.24,Zak Knutson,948,222,148
+Scarlett Johansson,An American Rhapsody,2001,Drama,3.07,Éva Gárdos,442,165,35
+Scarlett Johansson,If Lucy Fell,1996,Comedy,2.41,Eric Schaeffer,701,224,37
+Scarlett Johansson,My Brother the Pig,1999,Science Fiction,2.27,Erik Fleming,366,62,20
+Scarlett Johansson,Bert Stern: Original Madman,2011,Documentary,3.2,Shannah Laumeister Stern,107,56,12
+Scarlett Johansson,Fall,1997,Drama,2.91,Eric Schaeffer,148,64,17

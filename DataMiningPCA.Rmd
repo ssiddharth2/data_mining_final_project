@@ -1,0 +1,64 @@
+---
+title: "Untitled"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+library("cluster.datasets")
+library("tidyverse")
+```
+
+```{r}
+data('birth.death.rates.1966')
+```
+
+```{r}
+plot(x=birth.death.rates.1966$birth, y=birth.death.rates.1966$death,xlab="birth",ylab="death")
+```
+
+
+```{r}
+birthPCA=prcomp(birth.death.rates.1966%>%select(-country),scale=TRUE)
+```
+
+```{r}
+birthPCA
+```
+
+```{r}
+plot(birthPCA$x[,"PC1"],birthPCA$x[,"PC2"],xlab="PC1",ylab="PC2")
+```
+
+```{r}
+country_tibble=tibble(country=birth.death.rates.1966$country,PC1=birthPCA$x[,"PC1"],PC2=birthPCA$x[,"PC2"])
+ggplot(data=country_tibble,aes(x=PC1,y=PC2))+geom_point()+geom_text(label=country_tibble$country)
+```
+
+
+
+
+```{r}
+screeplot(birthPCA)
+```
+
+
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
