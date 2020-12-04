@@ -41,7 +41,7 @@ library(cluster.datasets)
 
 ### Overview
 
-Clustering is a unsupervised learning technique that seeks to group similar objects together. It is often used during exploratory data analysis to investigate potential patterns in data points. Although all types of clustering seek to group similar objects, the notion of how  'similarity' is defined distinguish one type of clustering algorithm from another. Three major types of clustering algorithms are:
+Clustering is a unsupervised learning technique that seeks to group similar objects together. It is often used during exploratory data analysis to investigate potential patterns in data points. Although all types of clustering seek to group similar objects, the notion of how  'similarity' is defined distinguish one type of clustering algorithm from another. Three major types of clustering algorithms are$^2$:
 
 - **Connectivity-Based Clustering**
   - Objects are  similar to closer objects rather than to far away objects.
@@ -51,10 +51,23 @@ Clustering is a unsupervised learning technique that seeks to group similar obje
 
 - **Distribution-Based Clustering**
   - Objects are similar if they come from the same distribution.
+  
+### Sample Dataset
+
+To analyze clustering we will look at the `birth.death.rates.1966` dataset in the `cluster.datasets` R package. This package contains the birth and death rates per 1000 people for 70 countries. We can visualize this data below:
+
+```{r include=FALSE}
+data(birth.death.rates.1966)
+data <- birth.death.rates.1966
+birth_death_rates <- data[,c('birth','death')]
+```
+```{r echo=FALSE}
+ggplot(data, aes(x=birth, y=death)) + geom_point() + xlab('Birth Rate per 100') + ylab('Death Rate per 100')
+```
 
 ### Distance 
 
-Regardless of the specific algorithm used, Clustering often requires a notion of *distance* between objects. Because distance is used in these algorithms, it is often important to *scale* your data so that a particularly high-magnitude feature does not exert excessive influence in the clustering. There are several different types of distance metrics, and the right one to use depends on the problem at hand.
+Regardless of the specific algorithm used, clustering often requires a notion of *distance* between objects. Because distance is used in these algorithms, it is often important to *scale* your data so that a particularly high-magnitude feature does not exert excessive influence in the clustering. There are several different types of distance metrics, and the right one to use depends on the problem at hand$^1$.
 
 #### Euclidean Distance
 
@@ -66,7 +79,7 @@ Euclidean Distance is often the default type of distance chosen for the problem,
 
 $d(x,y) = \sum_{i=1}^n\lvert(x_i-y_i)\rvert$
 
-Manhattan Distance can be thought of as the shortest path between two points in euclidean space, with the restraint that the path can only move at right angles (similiar to a taxi car traversing a city). Manhattan Distance could be useful where the data naturally expresses distance in this format, for example, a chessboard can only be traversed in this form. The green line in the image below represents euclidean distance, and the red, blue, and yellow lines represent the shortest paths using Manhattan distance. Image from [wikipediea](https://en.wikipedia.org/wiki/Taxicab_geometry)
+Manhattan Distance can be thought of as the shortest path between two points in euclidean space, with the restraint that the path can only move at right angles (similiar to a taxi car traversing a city). Manhattan Distance could be useful where the data naturally expresses distance in this format. For example, a chessboard can only be traversed in this form. The green line in the image below represents euclidean distance, and the red, blue, and yellow lines represent the shortest paths using Manhattan Distance. Image from [wikipedia](https://en.wikipedia.org/wiki/Taxicab_geometry).
 
 
 <img src='manhattan.png' class='image' />
@@ -76,22 +89,13 @@ Manhattan Distance can be thought of as the shortest path between two points in 
 
 $d(x,y) = 1 - \frac{\sum_{i=1}^n (x_i-\bar{x})(y_i-\bar{y})}{\sqrt{\sum_{i=1}^n (x_i-\bar{x})^2 \sum_{i=1}^n (y_i-\bar{y})^2}}$
 
-Instead of a distance metric grounded in euclidean space, the Pearson Correlation Distance is a correlation-based distance: it is essentially one minus the correlation between two objects. This is useful when we want to group items together when their components follow the same pattern (i.e, when one dimension in one component is high the corresponding dimension in the other component is high, and the same for low values), but the two items may not be close in euclidean space. In example of utilizing the type of distance metric is in DNA / gene expression analysis, where we are interesting in genes that follow the same 'pattern' together (1).
+Instead of a distance metric grounded in euclidean space, the Pearson Correlation Distance is a correlation-based distance: it is essentially one minus the correlation between two objects. This is useful when we want to group items together when their components follow the same pattern (i.e, when one dimension in one component is high the corresponding dimension in the other component is high, and the same for low values), but the two items may not be close in euclidean space. An example of utilizing this type of distance metric is in DNA / gene expression analysis, where we are interesting in genes that follow the same 'pattern' together$^1$.
 
 ### Connectivity-Based Clustering
 
 ### Centroid-Based Clustering
 
-In Centroid-Based Clustering, each cluster is defined by a centroid: the arithmetic mean of all points in the cluster. One of the most common Centroid-Based Clustering algorithms is **K-Means Clustering**. To analyze clustering we will look at the `birth.death.rates.1966` dataset in the `cluster.datasets` R package. This package contains the birth and death rates per 1000 people for 70 countries.
-
-```{r include=FALSE}
-data(birth.death.rates.1966)
-data <- birth.death.rates.1966
-birth_death_rates <- data[,c('birth','death')]
-```
-```{r echo=FALSE}
-ggplot(data, aes(x=birth, y=death)) + geom_point() + xlab('Birth Rate per 100') + ylab('Death Rate per 100')
-```
+In Centroid-Based Clustering, each cluster is defined by a centroid: the arithmetic mean of all points in the cluster. One of the most common Centroid-Based Clustering algorithms is **K-Means Clustering**. 
 
 #### Algorithm
 
@@ -104,15 +108,15 @@ The K-Means algorithm works as follows:
 
 #### Initialization Methods
 
-Although the iterative algorithm is fairly simple, the quest remains on how to initialize the K means. There are two commonly used methods: the Forgy method and the Random Partition.
+Although the iterative algorithm is fairly simple, the question remains on how to initialize the K means. There are two commonly used methods: the Forgy Method and the Random Partition.
 
 ##### Forgy Method
 
-Randomly picks K points from the dataset to utilize as the initial K means. This often leads to initial K means that are fairly spread out. (3)
+Randomly picks K points from the dataset to utilize as the initial K means. This often leads to initial K means that are fairly spread out$^3$.
 
 ##### Random Partition
 
-Randomly assign each point to one of the K clusters. The centroids of these clusters are then computed and used as the initial K means. This often leads to initial K means that are close to the center of the data. (3)
+Randomly assign each point to one of the K clusters. The centroids of these clusters are then computed and used as the initial K means. This often leads to initial K means that are close to the center of the data$^3$.
 
 #### Number of Starts
 
@@ -120,7 +124,7 @@ One of the drawbacks of K-Means is that it is a *heuristic*, which means that th
 
 #### Choice of K
 
-As clustering is an unsupervised learning method, we do not have access to how many clusters in reality there are. However, we can estimate the number of clusters (the choice of K) several ways. One way is to inspect the data visually; for example in the scatter plot above there appears to be two main clusters of data, one could separate the data based on if the point has a birth rate greater or less than 30. Another, more analytic, option is to run K Means for a variety of K values and create a graph of the average within-cluster sum of squares vs. K. In this graph one looks for the point of diminishing returns, i.e the point where increasing the number of clusters does not significantly decrease the average within-cluster sum of squares, this is often referred to as the 'eblow' in the plot. The graph below shows how the clustering results change as we increase K for the `birth.death.rates.1966` dataset. After K = 2 or 3, the clusters appear to visually make less sense.
+As clustering is an unsupervised learning method, we do not have access to how many clusters in reality there are. However, we can estimate the number of clusters (the choice of K) several ways. One way is to inspect the data visually. For example in the scatter plot above there appears to be two main clusters of data; one could separate the data based on if the point has a birth rate greater or less than 30. Another, more analytic, option is to run K Means for a variety of K values and create a graph of the  within-cluster sum of squares vs. K. In this graph one looks for the point of diminishing returns, i.e the point where increasing the number of clusters does not significantly decrease the  within-cluster sum of squares. This is often referred to as the 'elbow' in the plot. The graph below shows how the clustering results change as we increase K for the `birth.death.rates.1966` dataset. After K = 2 or 3, the clusters appear to visually make less sense.
 
 ```{r, echo=FALSE,out.width="100%"}
 #-- Run kmeans for multiple K
@@ -154,7 +158,7 @@ Using the `kmeans` function in R, we can easily run K-Means on our sample datase
 km = kmeans(birth_death_rates, centers=2, nstart=25)
 ```
 
-The `kmeans` function takes in the data, the number of centers (K), and the number of starts: this is the number of times that K-Means is run, choosing the 'best' run based on the smallest within-cluster sum of squares. The resulting variables contains a vector of the cluster assignment to each point; we can plot these visually below:
+The `kmeans` function takes in the data, the number of centers (K), and the number of starts: this is the number of times that K-Means is run, choosing the 'best' run based on the smallest within-cluster sum of squares. The resulting variable contains a vector of the cluster assignment to each point; we can plot these visually below:
 
 ```{r, echo=FALSE}
 data$cluster <- factor(km$cluster)
@@ -169,40 +173,40 @@ There are several advantages and disadvantages to utilizing the K-Means algorith
 
 - Simple
   - K-Means is simple to implement, additionally libraries already exist that implement K-Means in both R and python
-- Guarantee of Convergence (4)
-  - Although no guarantee that converged to optimal solution
+- Guarantee of Convergence$^4$.
+  - Although no guarantee that K-Means converged to a globally optimal solution.
 - Scalability
-  - Due to the heuristic nature of the algorithm, scales well to large data
+  - Due to the heuristic nature of the algorithm, scales well to large data.
 
 ##### Disadvantages
 
 - Choosing K
-  - although there are several way to choose K, it is simply our 'best guess' of what reality is
+  - although there are several way to choose K, it is simply our 'best guess' of what reality is.
 - Suffers with High Dimensionality
-  - As is common with distance-based algorithms, as the number of features increases, the euclidean distance between points increases and the data are sparse within this volume, resulting in reduced effectiveness of K-Means
+  - As is common with distance-based algorithms, as the number of features increases, the euclidean distance between points increases and the data are sparse within this volume, resulting in reduced effectiveness of K-Means.
 - Outliers
-  - outliers will tend to pull the centroids of clusters, affecting the resulting clustering
+  - Outliers will tend to pull the centroids of clusters, affecting the resulting clustering.
 - Heuristic
-  - K-Means is a heuristic, which means that we could potentially get stuck in a local optima
+  - K-Means is a heuristic, which means that we could potentially get stuck in a local optima.
 - Hard Classification
-  - K-Means gives us a binary answer in regards to which cluster a point belongs to. Other models, like Gaussian Mixture Models give us a probability of a point belonging to a class, which could help us quantify our uncertainty in the cluster assignment
+  - K-Means gives us a binary answer in regards to which cluster a point belongs to. Other models, like Gaussian Mixture Models give us a probability of a point belonging to a class, which could help us quantify our uncertainty in the cluster assignment.
 
 #### Distribution-Based Clustering
 
-One of the disadvantages discussed above in K-Means is that points are assigned a hard classification to a single. However, we can utilize distribution-based clustering to receive a soft-classification, or a probability, of a point belonging to a cluser. One of the main Distribution-Based Clustering algorithms is Gaussian Mixture Models. Gaussian Mixture Models treat the probability density disribution as being constructed of K different distributions:
+One of the disadvantages discussed above in K-Means is that points are assigned a hard classification to a single point. However, we can utilize distribution-based clustering to receive a soft-classification, or a probability, of a point belonging to a cluster. One of the main Distribution-Based Clustering algorithms is Gaussian Mixture Models. Gaussian Mixture Models treat the probability density distribution as being constructed of K different distributions$^5$:
 
 $f(x) = \sum_{k=1}^K * \pi_k * f_k(x)$
 
 Where $\pi_k$ represents the probability of a point coming from distribution k and $f_k(x)$ represents distribution k. Specifically in Gaussian Mixture Models, each $f_k(x)$ is a gaussian with parameters $\mu_k, \sigma^2_k$. Gaussian Mixture Models attempt to estimate two things:
 
 1. The parameter values
-    - This includes the values of each \pi, as well as the parameters of the gaussians:  $\mu_k, \sigma^2_k$.
+    - This includes the values of each $\pi$, as well as the parameters of the gaussians:  $\mu_k, \sigma^2_k$.
 2. The *responsibilities* of each data point $r_{ij}$
-    - This represents the posterior probability that each data point $i$ came from each distribution $k$.
+    - This represents the posterior probability that each data point $i$ came from each distribution $j$.
     
-These values are estimated using the iterative EM algorithm. This algorithm consists of the following steps steps:
+These values are estimated using the iterative EM algorithm. This algorithm consists of the following steps:
 
-1. Initialize the parameters
+1. Initialize the parameters. This can be done randomly or with an intuitive guess.
 2. E Step:
     - Holding the parameter values fixed, estimate the new values of the responsibilities.
 3. M Step:
@@ -229,7 +233,7 @@ In practice, the EM algorithm can converge fairly quickly. Consider the output b
   
 #### Soft Classification
 
-As mentioned above the responsibilities calculated during the EM algorithm are *probabilities*: this provides more information than the hard classification provided by K-Means because it provides us a measure of uncertainty in our results. This is especially important at the boundary points between the two distributions, allowing to see how confident we can be in our results.
+As mentioned above the responsibilities calculated during the EM algorithm are *probabilities*: this provides more information than the hard classification provided by K-Means because it provides  a measure of uncertainty in our results. This is especially important at the boundary points between the two distributions, allowing us to see how confident we can be in our results.
 
 #### Example in R
 
@@ -251,17 +255,17 @@ There are several advantages and disadvantages to utilizing Gaussian Mixture Mod
 
 - Soft Classification
   - Allows us to look at the probability of a point belonging to a class, as opposed to a hard classification
-- Statistical View of Clustering (6)
+- Statistical View of Clustering$^5$.
   - Allows us to view the clustering problem as attempting to find the underlying distributions that generate the data
-- Easily Interpretable
-  - Mixture Models are easy to understand as the weighted sum of different density distributions, and these distributions can be more easily visually represented than K-Means
+- Easily Interpretable.
+  - Mixture Models are easy to understand as the weighted sum of different density distributions, and these distributions can be more easily visualized than K-Means.
 
 ##### Disadvantages
 
 - Choosing K
-  - Similar to K-Means, we have to choose K; it is simply our 'best guess' of what reality is
+  - Similar to K-Means, we have to choose K; it is simply our 'best guess' of what reality is.
 - Stuck in Local Optima
-  - Like K-Means, Gaussian Mixture Models can potentially get stuck in a local optima depending on the starting point
+  - Like K-Means, Gaussian Mixture Models can potentially get stuck in a local optima depending on the starting point.
 - Scaling issues
   - As the number of dimensions or the number of distrubtions increases, EM can become computationally expensive.
 
@@ -269,15 +273,15 @@ There are several advantages and disadvantages to utilizing Gaussian Mixture Mod
 
 ## References
 
-https://www.datanovia.com/en/lessons/clustering-distance-measures/#methods-for-measuring-distances
+[1] “Clustering Distance Measures.” Datanovia, 20 Oct. 2018, www.datanovia.com/en/lessons/clustering-distance-measures/. 
 
-https://www.datacamp.com/community/tutorials/k-means-clustering-r
+[2]  Hamerly, Greg. “(PDF) Alternatives to the k-Means Algorithm That Find Better Clusterings.” ResearchGate,         www.researchgate.net/publication/221614137_Alternatives_to_the_k-means_algorithm_that_find_better_clusterings. 
 
-https://arxiv.org/pdf/1209.1960.pdf
+[3]  Jaiswal, Sejal. “K-Means Clustering in R Tutorial.” DataCamp Community, 14 Mar. 2018, www.datacamp.com/community/tutorials/k-means-clustering-r. 
 
-https://developers.google.com/machine-learning/clustering/algorithm/advantages-disadvantages
+[4]  “k-Means Advantages and Disadvantages  |  Clustering in Machine Learning.” Google, Google, developers.google.com/machine-learning/clustering/algorithm/advantages-disadvantages. 
 
-https://mdporter.github.io/SYS6018/lectures/06-clustering.pdf
+[5]  Porter, Michael. Clustering Notes, 2020, mdporter.github.io/SYS6018/lectures/06-clustering.pdf. 
 
 
 
