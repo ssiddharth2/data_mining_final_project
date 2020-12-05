@@ -278,7 +278,8 @@ In order to utilize this threshold, we first must calculate Euclidean distance b
 
 An example of a possible dendrogram for this example is seen below.[7]
 ![Dendrogram](hierarchical_dendrogram.png)
-```
+
+#### Types of Clustering
 
 We can now cluster our observations from the `birth.death.rates.1966` using different types of linkage. While the two main linkages are Average and Complete linkage, one can also use Single and Centroid linkage. In single linkage we find the shortest distance between two points and cluster them. From that point we find the next shortest distance. If points 1 and 2 are clustered together and 4 and 5 are clustered together on opposite sides of 3, 3 will go into the cluster containing the closest of the 4 independent points.
 
@@ -311,6 +312,8 @@ plot(hclust(h.data.dist, method = 'centroid'), labels=data.labs , main="Centroid
 Linkage ", xlab="", sub="",ylab="")
 
 ```
+
+#### Clustering Visualization
 
 Dendrograms are a visual representation of the linkage processes. As seen above, the reason why Average and Complete Linkage are more commonly used is that it usually provides for more evenly grouped clusters at all thresholds. Below is the dendrogram of the data using complete linkage. When viewing the dendrogram below it is possible to see where these closest pairs end up. Where there is a lower split, the two observations are closer to each other and joined earlier in the linkage process. This does not mean that any adjacent observation is close to it’s adjacent observations. If a single observation connects to a group of observations, this means that the observation’s adjacency is to all of the observations in that adjacent branch in accordance to whichever linkage process took place. In higher splits, there is a higher distance between groups of observations. By setting a threshold of 2.5 in this example we produce 5 clusters. The names of the countries identified in these clusters can be viewed in the table. We can see how hierarchical clustering grouped the outliers in their own individual groups and then nicely separated the remaining countries into 3 understandable groups of high death rate/high birth rate, high birth rate/low death rate, and low borth rate/low death rate. 
 
