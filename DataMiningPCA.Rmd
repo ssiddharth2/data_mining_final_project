@@ -53,12 +53,35 @@ screeplot(birthPCA)
 
 
 
-## Including Plots
 
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
+```{r}
+states_education=read_csv("states_all.csv")
+head(states_education)
 ```
 
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+```{r}
+states_education=states_education%>%filter(YEAR==2013)
+states_education=na.omit(states_education)
+states_education
+```
+
+
+```{r}
+educationPCA=prcomp(states_education%>%select(-c(STATE,`PRIMARY_KEY`,YEAR)),scale=TRUE)
+educationPCA
+```
+
+```{r}
+screeplot(educationPCA)
+```
+
+```{r}
+state_tibble=tibble(state=states_education$STATE,PC1=educationPCA$x[,"PC1"],PC2=educationPCA$x[,"PC2"])
+ggplot(data=state_tibble,aes(x=PC1,y=PC2))+geom_point()+geom_text(label=state_tibble$state,size=2)
+```
+
+
+```
+
+
+
