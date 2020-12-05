@@ -273,11 +273,11 @@ There are several advantages and disadvantages to utilizing Gaussian Mixture Mod
 
 Hierarchical Clustering similarly categorizes data based on distance from other points. However, where K-means has a set number of clusters, hierarchical clustering changes number of clusters depending on a threshold between 0 and some maximal value. If we had a cluster where the highest maxmial value was 1 and we chose a threshold of 0, all observations would be their own cluster. A threshold of 1 assigns all observations to 1 cluster. 
 
-In order to utilize this threshold, we first must calculate Euclidean distance between observations. Different ways of determining these distances are called linkages. We will address that further down. As seen in K-means, we can visualize data in a scatter plot. By finding the distance between observations, we can get a good idea of where closer connections will be on a dendrogram and where clusters might make sense. In this example, 1 and 6 as well as 5 and 7 will likely be our closest pairs and therefore be our starting points.
+In order to utilize this threshold, we first must calculate Euclidean distance between observations. Different ways of determining these distances are called linkages. We will address that further down. As seen in K-means, we can visualize data in a scatter plot. By finding the distance between observations, we can get a good idea of where closer connections will be on a dendrogram and where clusters might make sense. In this example, 1 and 6 as well as 5 and 7 will likely be our closest pairs and therefore be our starting points. [7]
 
 ![Cluster Points](/Users/ben_cosgo/Documents/SYS6018/data_mining_final_project/hierarchical_visual.png)
 
-An example of a possible dendrogram for this example is seen below.
+An example of a possible dendrogram for this example is seen below.[7]
 
 ![Dendrogram](/Users/ben_cosgo/Documents/SYS6018/data_mining_final_project/hierarchical_dendrogram.png)
 
@@ -328,6 +328,7 @@ table(hc.clusters, data.labs)
 ggplot(birth_death_rates, aes(birth, death)) + 
   geom_point(alpha = 0.4, size = 3.5) + geom_point(col = hc.clusters)
 ```
+[6]
 ## Conclusion
 
 ## References
@@ -341,6 +342,10 @@ ggplot(birth_death_rates, aes(birth, death)) +
 [4]  “k-Means Advantages and Disadvantages  |  Clustering in Machine Learning.” Google, Google, developers.google.com/machine-learning/clustering/algorithm/advantages-disadvantages. 
 
 [5]  Porter, Michael. Clustering Notes, 2020, mdporter.github.io/SYS6018/lectures/06-clustering.pdf. 
+
+[6] https://datascienceplus.com/hierarchical-clustering-in-r/
+
+[7] https://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf
 
 
 
