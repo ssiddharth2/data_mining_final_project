@@ -35,7 +35,96 @@ library(cluster.datasets)
 
 ## Introduction
 
+### Unsupervised Learning
+Unlike supervised learning where we have a response variable that we are interested in measuring, unsupervised learning attempts to find interesting trends and potential sub groupings of observations within datasets that lack a response variable. This presents an interesting challenge to data science as we no longer have the ability to measure how accurate our modeling or analysis is by comparing prediction to the true response variable. Instead we must take a more subjective approach to understanding the data. Therefore the methods used in unsupervised learning are typically a form of exploratory analysis. There are a variety of ways in which unsupervised learning may be implemented, but we will limit our tutorial to two main types: Principal Component Analysis (PCA) and Clustering. 
+
 ## Principal Component Analysis
+
+### Introduction: 
+
+Prior to jumping into PCA as a whole, let’s first examine what principal components are. When given a large dataset with many variables, it can be difficult to fully comprehend and visualize the patterns and trends in the data. Principal components can help us create  a smaller representative set of variables to explain the same amount of variance seen in the large dataset with all variables. Furthermore, the process of computing these components and a smaller set of features, also known as reducing dimensionality,  is called Principal Component Analysis (PCA). PCA can be a very useful data visualization and pre-processing tool for a variety of methodologies including both supervised and unsupervised learning. However for this tutorial we will limit its use to the unsupervise realm of data science. 
+
+In order to understand how PCA works, we must understand how to be able to calculate the first principal component. Let’s first take a look at a simple dataset. We will be using the Birth and Death Rates per 1000 dataset. This is a dataset that contains the birth and rates per 1000 persons for 70 different countries. Here is what we get by simply plotting the deaths rates for each country against the birth rates.
+
+```{r include=FALSE}
+data(birth.death.rates.1966)
+data <- birth.death.rates.1966
+birth_death_rates <- data[,c('birth','death')]
+```
+```{r echo=FALSE}
+ggplot(data, aes(x=birth, y=death)) + geom_point() + xlab('Birth Rate per 100') + ylab('Death Rate per 100')
+```
+
+When computing the first principal component, we are really trying to find a way to best represent the whole feature space in one dimension. We are trying to find the direction in the feature space that has a high amount of variation between the two data points. As we notice from above, there is more variance in the birth rates between the countries than there is between the individual death rates between the countries  However the most amount of variability of the data between the countries in one dimension could actually be better represented by a feature that can be expressed as a linear combination of the birth rates and death rates of a country and this is how PCA in simplified terms, is reducing the dimensionality of the data set.
+
+### How PCA works:
+
+1. In order to find the feature that accounts for most of the variability through PCA, we must first scale the data so that all of the k features have a mean of 0 and a variance of 1. As such this is a method that can only work with quantitative data. 
+
+2. Once we scale these points, we must find the sum of squared distances of the scaled data projected onto a random line through the origin to the origin itself. The goal is to ultimately find the line that maximizes this distance. This line is called our first principal component. The slope of the line can help us determine which feature is of most importance,  as it can be seen as a sort of ratio between all our features in the data. We can obtain the loadings from this step too, as they are simply the ratios or weights associated with the features that make up the component.  Another way to think of the principal component is as a normalized linear combination of the features in our data: *Equation From ISLR section 10.2.1(p. 375)*
+  
+  $z_{1}=\phi_1x_{1}+\phi_2x_{2}+...+\phi_kx_{k}$
+
+Where the weights,$\phi$, of the component are the loadings. One of the constraints of PCA is that the sum of squares of the loadings must equal one. Again, we can use these loadings to see how much each of the k features contributes to the principal component. From here, we want to maximize the variance of this principal component with respect to the constraint of the loadings. *Equation from ISLR section 10.2.1(p. 376)*
+  
+  maximize {$\frac{1}{n}\sum_{i=1}^{n}(\sum_{j=1}^{k}\phi_j^{2}x_{ij})^2$} subject to $\sum_{j=1}^{k}\phi_j^{2} = 1$
+
+This gets our first component. From ISLR section 10.2.1(p. 376)
+  
+  $z_{i1}=\phi_1x_{i1}+\phi_2x_{i2}+...+\phi_kx_{ik}$
+
+3. From this principal component, we can get a value for the feature for each of the data points which in this case is known as the principal component score. 
+
+4. We again repeat this process with the second component, with the additional constraint of making sure that the individual components are uncorrelated with each other, which in linear algebra translates to each principal component being orthogonal to one another. We continue computing the principal components depending on how many dimensions we have in our data. For data with k-dimension we generally get k-principal components or if the sample size, n, is less than the number of features, we get n-1 principal components.
+
+5. From here we can use the sum of square distances calculated for each principal component in step 2 to determine which of our principal components account for the most variance seen in the data. The principal components that are deemed the most important can then be used as a method to either graph or explain the data in a reduced state. This not only will allow us to visualize the data in a 2-d, but also can be helpful in the reduction of noise seen in high dimensional data and thus be used in combination with other unsupervised methods such as clustering. This will be explained in more detail later on. 
+
+### Working with A High Dimension Dataset
+
+Now that we have a better understanding of how PCA works, let us apply it on a dataset that has more than 2 dimensions. In R, we can use the `prcomp` function from the `stats` package to do Principal Component Analysis and make all the needed computations discussed above. We will be using the US Education dataset from kaggle that contains data for all 50 states as well as the District of Columbia for years from 1992 to 2019, and has features such as Enrollment, total_revenue, instruction expenditure, the state’s average math score for the NAEP exam,etc. For this tutorial we will mainly focus on the year 2013. 
+
+<a href=”https://www.kaggle.com/noriuk/us-education-datasets-unification-project?select=output_data”> Dataset Link </a>
+
+```{r}
+states_education=read_csv("states_all.csv")
+head(states_education)
+```
+We will filter the data to only include the year 2013 and remove rows with any na values. Performing this clearing still leaves us with data on all 50 states as well as the District of Columbia. 
+
+```{r}
+states_education=states_education%>%filter(YEAR==2013)
+states_education=na.omit(states_education)
+knitr::kable(head(states_education), format="markdown")
+```
+
+Then we may turn this data into an unsupervised learning problem by removing the state names altogether, and furthermore perform PCA.  
+```{r}
+educationPCA=prcomp(states_education%>%select(-c(STATE,`PRIMARY_KEY`,YEAR)),scale=TRUE)
+educationPCA$sdev
+```
+
+```{r}
+knitr::kable(educationPCA$rotation,format="markdown")
+```
+
+Runnin the `prcomp` function we can obtain the standard deviations of the principal components as and a matrix of variable loadings. Since we have 22 features, we know that we will also have 22 principal components which is consistent with the output seen above. However,  generally we only need to consider the first few components as they typically explain most of the variance seen in the data. Looking at the first principal component, we can deduce the most important features by looking at which features have the greatest loadings. In this case, we observe that variables related to revenue, expenditure and number of students in specific grades to be the most important. Given that we scaled the data, states with above average total revenues, above average amount of expenditure, as well as an above average number of students in each of the grade levels would have a higher score for this principal component. As we see the first component seems to be a feature that is indicative of how large the state is as loadings are fairly distributed across features like expenditure, revenue, number of students in the different grade levels. There is less emphasis on the test scores in this component. So states with larger populations like California would probably have higher scores for this principal component.The second component is a feature that seems to be more indicative of a state's academic performance as the loadings of this component put emphasis on features related to the test scores in math and reading.
+
+To see how many Principal Components are needed to best represent the data, we can use a scree plot to assess how many principal components are needed to capture the variance in the data. This plot gives us the variances of each principal component. As we can see from the scree plot below, the first two components seem to be explaining most of the variance that is found in the data.
+
+```{r}
+screeplot(educationPCA)
+```
+
+As we can see through this scree plot, we can reduce this 22-dimension data to 2-dimensions while still taking into account the 22 features of the dataset. With 2 dimensions we can now adequately visualize this rather complex dataset.
+
+```{r}
+state_tibble=tibble(state=states_education$STATE,PC1=educationPCA$x[,"PC1"],PC2=educationPCA$x[,"PC2"])
+ggplot(data=state_tibble,aes(x=PC1,y=PC2))+geom_point()+geom_text(label=state_tibble$state,size=2)
+```
+
+Through this visual representation and our understanding of the first two principal components, we can see that through the first component, California is one of the largest states in the country based on its spending, revenue and number of students in the different grade level but we also see through the second component the academic performance of students is weaker when compared to most of the other states in the country.
+
+
 
 ## Clustering
 
