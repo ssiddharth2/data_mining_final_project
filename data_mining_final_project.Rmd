@@ -62,16 +62,16 @@ When computing the first principal component, we are really trying to find a way
 1. In order to find the feature that accounts for most of the variability through PCA, we must first scale the data so that all of the k features have a mean of 0 and a variance of 1. As such this is a method that can only work with quantitative data. 
 
 2. Once we scale these points, we must find the sum of squared distances of the scaled data projected onto a random line through the origin to the origin itself. The goal is to ultimately find the line that maximizes this distance. This line is called our first principal component. The slope of the line can help us determine which feature is of most importance,  as it can be seen as a sort of ratio between all our features in the data. We can obtain the loadings from this step too, as they are simply the ratios or weights associated with the features that make up the component.  Another way to think of the principal component is as a normalized linear combination of the features in our data: *Equation From ISLR section 10.2.1(p. 375)*
-  
-  $z_{1}=\phi_1x_{1}+\phi_2x_{2}+...+\phi_kx_{k}$
 
-Where the weights,$\phi$, of the component are the loadings. One of the constraints of PCA is that the sum of squares of the loadings must equal one. Again, we can use these loadings to see how much each of the k features contributes to the principal component. From here, we want to maximize the variance of this principal component with respect to the constraint of the loadings. *Equation from ISLR section 10.2.1(p. 376)*
-  
-  maximize {$\frac{1}{n}\sum_{i=1}^{n}(\sum_{j=1}^{k}\phi_j^{2}x_{ij})^2$} subject to $\sum_{j=1}^{k}\phi_j^{2} = 1$
+    $z_{1}=\phi_1x_{1}+\phi_2x_{2}+...+\phi_kx_{k}$
 
-This gets our first component. From ISLR section 10.2.1(p. 376)
+    Where the weights,$\phi$, of the component are the loadings. One of the constraints of PCA is that the sum of squares of the loadings must equal one. Again, we can use these loadings to see how much each of the k features contributes to the principal component. From here, we want to maximize the variance of this principal component with respect to the constraint of the loadings. *Equation from ISLR section 10.2.1(p. 376)*
   
-  $z_{i1}=\phi_1x_{i1}+\phi_2x_{i2}+...+\phi_kx_{ik}$
+    **Maximize** {$\frac{1}{n}\sum_{i=1}^{n}(\sum_{j=1}^{k}\phi_j^{2}x_{ij})^2$} **subject to $\sum_{j=1}^{k}\phi_j^{2} = 1$**
+
+    This gets our first component. *From ISLR section 10.2.1(p. 376)*
+  
+    $z_{i1}=\phi_1x_{i1}+\phi_2x_{i2}+...+\phi_kx_{ik}$
 
 3. From this principal component, we can get a value for the feature for each of the data points which in this case is known as the principal component score. 
 
@@ -87,7 +87,7 @@ Now that we have a better understanding of how PCA works, let us apply it on a d
 
 ```{r}
 states_education=read_csv("states_all.csv")
-head(states_education)
+knitr::kable(head(states_education), format="markdown")
 ```
 We will filter the data to only include the year 2013 and remove rows with any na values. Performing this clearing still leaves us with data on all 50 states as well as the District of Columbia. 
 
