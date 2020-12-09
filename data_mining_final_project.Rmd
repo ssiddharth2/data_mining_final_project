@@ -92,7 +92,7 @@ Through this process, we are able to get prinicipal components that we can asses
 
 Now that we have a better understanding of how PCA works, let us apply it on a dataset that has more than 2 dimensions. In R, we can use the `prcomp` function from the `stats` package to do Principal Component Analysis and make all the needed computations discussed above. We will be using the US Education dataset from kaggle that contains data for all 50 states as well as the District of Columbia for years from 1992 to 2019, and has features such as Enrollment, total_revenue, instruction expenditure, the state’s average math score for the NAEP exam,etc. For this tutorial we will mainly focus on the year 2013. 
 
-<a href=”https://www.kaggle.com/noriuk/us-education-datasets-unification-project?select=output_data”> Dataset Link </a>
+ [Dataset Link](https://www.kaggle.com/noriuk/us-education-datasets-unification-project?select=output_data) 
 
 We will filter the data to only include the year 2013 and remove rows with any na values. Performing this clearing still leaves us with data on all 50 states as well as the District of Columbia. A sample of some of the predictors in the dataset is shown below.
 ```{r include=FALSE}
