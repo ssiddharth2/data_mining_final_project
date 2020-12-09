@@ -22,6 +22,13 @@ library(ks)
 library(mixtools)
 
 library(cluster.datasets)
+#- Better table printing
+library(kableExtra) # https://haozhu233.github.io/kableExtra/awesome_table_in_html.html
+format_table <- function(x, nmax=10) {
+  kable(x) %>% 
+    kable_styling(full_width = FALSE, font_size=11, position = "left") %>% 
+    {if(nrow(x) > nmax) scroll_box(., width = "100%", height = "200px") else .}
+}
 ```
 
 ```{css, echo=FALSE}
@@ -35,7 +42,6 @@ library(cluster.datasets)
 
 ## Introduction
 
-### Unsupervised Learning
 Unlike supervised learning where we have a response variable that we are interested in measuring, unsupervised learning attempts to find interesting trends and potential sub groupings of observations within datasets that lack a response variable. This presents an interesting challenge to data science as we no longer have the ability to measure how accurate our modeling or analysis is by comparing prediction to the true response variable. Instead we must take a more subjective approach to understanding the data. Therefore the methods used in unsupervised learning are typically a form of exploratory analysis. There are a variety of ways in which unsupervised learning may be implemented, but we will limit our tutorial to two main types: Principal Component Analysis (PCA) and Clustering. 
 
 ## Principal Component Analysis
@@ -44,7 +50,7 @@ Unlike supervised learning where we have a response variable that we are interes
 
 Prior to jumping into PCA as a whole, let’s first examine what principal components are. When given a large dataset with many variables, it can be difficult to fully comprehend and visualize the patterns and trends in the data. Principal components can help us create  a smaller representative set of variables to explain the same amount of variance seen in the large dataset with all variables. Furthermore, the process of computing these components and a smaller set of features, also known as reducing dimensionality,  is called Principal Component Analysis (PCA). PCA can be a very useful data visualization and pre-processing tool for a variety of methodologies including both supervised and unsupervised learning. However for this tutorial we will limit its use to the unsupervise realm of data science. 
 
-In order to understand how PCA works, we must understand how to be able to calculate the first principal component. Let’s first take a look at a simple dataset. We will be using the Birth and Death Rates per 1000 dataset. This is a dataset that contains the birth and rates per 1000 persons for 70 different countries. Here is what we get by simply plotting the deaths rates for each country against the birth rates.
+In order to understand how PCA works, we must understand how to be able to calculate the first principal component. Let’s first take a look at a simple dataset. We will be using the `birth.death.rates.1966` dataset in the `cluster.datasets` R package. This is a dataset that contains the birth and rates per 1000 persons for 70 different countries. Here is what we get by simply plotting the deaths rates for each country against the birth rates.
 
 ```{r include=FALSE}
 data(birth.death.rates.1966)
@@ -55,21 +61,21 @@ birth_death_rates <- data[,c('birth','death')]
 ggplot(data, aes(x=birth, y=death)) + geom_point() + xlab('Birth Rate per 100') + ylab('Death Rate per 100')
 ```
 
-When computing the first principal component, we are really trying to find a way to best represent the whole feature space in one dimension. We are trying to find the direction in the feature space that has a high amount of variation between the two data points. As we notice from above, there is more variance in the birth rates between the countries than there is between the individual death rates between the countries  However the most amount of variability of the data between the countries in one dimension could actually be better represented by a feature that can be expressed as a linear combination of the birth rates and death rates of a country and this is how PCA in simplified terms, is reducing the dimensionality of the data set.
+When computing the first principal component, we are really trying to find a way to best represent the whole feature space in one dimension. We are trying to find the direction in the feature space that has a high amount of variation between the two data points. As we notice from above, there is more variance in the birth rates between the countries than there is between the individual death rates between the countries. However, the most amount of variability of the data between the countries in one dimension could actually be better represented by a feature that can be expressed as a linear combination of the birth rates and death rates of a country and this is how PCA in simplified terms, is reducing the dimensionality of the data set.
 
 ### How PCA works:
 
 1. In order to find the feature that accounts for most of the variability through PCA, we must first scale the data so that all of the k features have a mean of 0 and a variance of 1. As such this is a method that can only work with quantitative data. 
 
-2. Once we scale these points, we must find the sum of squared distances of the scaled data projected onto a random line through the origin to the origin itself. The goal is to ultimately find the line that maximizes this distance. This line is called our first principal component. The slope of the line can help us determine which feature is of most importance,  as it can be seen as a sort of ratio between all our features in the data. We can obtain the loadings from this step too, as they are simply the ratios or weights associated with the features that make up the component.  Another way to think of the principal component is as a normalized linear combination of the features in our data: *Equation From ISLR section 10.2.1(p. 375)*
+2. Once we scale these points, we must find the sum of squared distances of the scaled data projected onto a random line through the origin to the origin itself. The goal is to ultimately find the line that maximizes this distance. This line is called our first principal component. The slope of the line can help us determine which feature is of most importance,  as it can be seen as a sort of ratio between all our features in the data. We can obtain the loadings from this step too, as they are simply the ratios or weights associated with the features that make up the component.  Another way to think of the principal component is as a normalized linear combination of the features in our data: *Equation From ISLR section 10.2.1 (p. 375)*
 
     $z_{1}=\phi_1x_{1}+\phi_2x_{2}+...+\phi_kx_{k}$
 
-    Where the weights,$\phi$, of the component are the loadings. One of the constraints of PCA is that the sum of squares of the loadings must equal one. Again, we can use these loadings to see how much each of the k features contributes to the principal component. From here, we want to maximize the variance of this principal component with respect to the constraint of the loadings. *Equation from ISLR section 10.2.1(p. 376)*
+    Where the weights, $\phi$, of the component are the loadings. One of the constraints of PCA is that the sum of squares of the loadings must equal one. Again, we can use these loadings to see how much each of the k features contributes to the principal component. From here, we want to maximize the variance of this principal component with respect to the constraint of the loadings. *Equation from ISLR section 10.2.1 (p. 376)*
   
     **Maximize** {$\frac{1}{n}\sum_{i=1}^{n}(\sum_{j=1}^{k}\phi_j^{2}x_{ij})^2$} **subject to $\sum_{j=1}^{k}\phi_j^{2} = 1$**
 
-    This gets our first component. *From ISLR section 10.2.1(p. 376)*
+    This gets our first component. *From ISLR section 10.2.1 (p. 376)*
   
     $z_{i1}=\phi_1x_{i1}+\phi_2x_{i2}+...+\phi_kx_{ik}$
 
@@ -77,7 +83,7 @@ When computing the first principal component, we are really trying to find a way
 
 4. We again repeat this process with the second component, with the additional constraint of making sure that the individual components are uncorrelated with each other, which in linear algebra translates to each principal component being orthogonal to one another. We continue computing the principal components depending on how many dimensions we have in our data. For data with k-dimension we generally get k-principal components or if the sample size, n, is less than the number of features, we get n-1 principal components.
 
-5. From here we can use the sum of square distances calculated for each principal component in step 2 to determine which of our principal components account for the most variance seen in the data. The principal components that are deemed the most important can then be used as a method to either graph or explain the data in a reduced state. This not only will allow us to visualize the data in a 2-d, but also can be helpful in the reduction of noise seen in high dimensional data and thus be used in combination with other unsupervised methods such as clustering. This will be explained in more detail later on. 
+5. From here we can use the sum of square distances calculated for each principal component in step 2 to determine which of our principal components account for the most variance seen in the data. The principal components that are deemed the most important can then be used as a method to either graph or explain the data in a reduced state. This not only will allow us to visualize the data in two dimensions, but also can be helpful in the reduction of noise seen in high dimensional data and thus be used in combination with other unsupervised methods such as clustering. This will be explained in more detail later on. 
 
 ### Working with A High Dimension Dataset
 
@@ -85,7 +91,7 @@ Now that we have a better understanding of how PCA works, let us apply it on a d
 
 <a href=”https://www.kaggle.com/noriuk/us-education-datasets-unification-project?select=output_data”> Dataset Link </a>
 
-```{r}
+```{r include=FALSE}
 states_education=read_csv("states_all.csv")
 knitr::kable(head(states_education), format="markdown")
 ```
@@ -143,7 +149,7 @@ Clustering is a unsupervised learning technique that seeks to group similar obje
   
 ### Sample Dataset
 
-To analyze clustering we will look at the `birth.death.rates.1966` dataset in the `cluster.datasets` R package. This package contains the birth and death rates per 1000 people for 70 countries. We can visualize this data below:
+To analyze clustering we will again look at the `birth.death.rates.1966` dataset in the `cluster.datasets` R package. This package contains the birth and death rates per 1000 people for 70 countries. We again can visualize this data below:
 
 ```{r include=FALSE}
 data(birth.death.rates.1966)
@@ -361,7 +367,7 @@ There are several advantages and disadvantages to utilizing Gaussian Mixture Mod
 
 Hierarchical Clustering similarly categorizes data based on distance from other points. However, where K-means has a set number of clusters, hierarchical clustering changes number of clusters depending on a threshold between 0 and some maximal value. If we had a cluster where the highest maxmial value was 1 and we chose a threshold of 0, all observations would be their own cluster. A threshold of 1 assigns all observations to 1 cluster. 
 
-In order to utilize this threshold, we first must calculate Euclidean distance between observations. Different ways of determining these distances are called linkages. We will address that further down. As seen in K-means, we can visualize data in a scatter plot. By finding the distance between observations, we can get a good idea of where closer connections will be on a dendrogram and where clusters might make sense. In this example, 1 and 6 as well as 5 and 7 will likely be our closest pairs and therefore be our starting points$^7$.
+In order to utilize this threshold, we first must calculate the distance between observations. Different ways of determining these distances are called linkages. We will address that further down. As seen in K-means, we can visualize data in a scatter plot. By finding the distance between observations, we can get a good idea of where closer connections will be on a dendrogram and where clusters might make sense. In this example, 1 and 6 as well as 5 and 7 will likely be our closest pairs and therefore be our starting points$^7$.
 
 ![Cluster Points](hierarchical_visual.png)
 
@@ -386,7 +392,7 @@ plot(hclust(h.data.dist), labels=data.labs , main="Complete
 Linkage ", xlab="", sub="",ylab="")
 ```
 
-In average linkage, we unsurprisingly take many averages. In our example above, in order to find distance, we would take the average of the distance from 3 to 2 and 3 to 1 to find the distance between the 3 cluster and the cluster containing 1 and 2. Similarly we could take the average of the distance from 3 to 4 and 3 to 5 to find the distance between the 3 cluster and the cluster containing 4 and 5. The smallest distance would determine the cluster which 3 would join. Additionally, we can find the distance between the cluster containing 1 and 2 and the cluster containing 4 and 5. This would be obtained by taking the average of the distance between 1 and 4, 1 and 5, 2 and 4, and 2 and 5. You can see from this that is the average of ALL possible individual distances.
+In average linkage, we unsurprisingly take many averages. In our example above, in order to find distance, we would take the average of the distance from 3 to 2 and 3 to 1 to find the distance between the 3 cluster and the cluster containing 1 and 2. Similarly we could take the average of the distance from 3 to 4 and 3 to 5 to find the distance between the 3 cluster and the cluster containing 4 and 5. The smallest distance would determine the cluster which 3 would join. Additionally, we can find the distance between the cluster containing 1 and 2 and the cluster containing 4 and 5. This would be obtained by taking the average of the distance between 1 and 4, 1 and 5, 2 and 4, and 2 and 5. You can see from this that it is the average of ALL possible individual distances.
 
 ```{r, out.width='100%'}
 plot(hclust(h.data.dist, method = 'average'), labels=data.labs , main="Average
@@ -402,9 +408,9 @@ Linkage ", xlab="", sub="",ylab="")
 
 ```
 
-#### Clustering Visualization
+### Clustering Visualization
 
-Dendrograms are a visual representation of the linkage processes. As seen above, the reason why Average and Complete Linkage are more commonly used is that it usually provides for more evenly grouped clusters at all thresholds. Below is the dendrogram of the data using complete linkage. When viewing the dendrogram below it is possible to see where these closest pairs end up. Where there is a lower split, the two observations are closer to each other and joined earlier in the linkage process. This does not mean that any adjacent observation is close to it’s adjacent observations. If a single observation connects to a group of observations, this means that the observation’s adjacency is to all of the observations in that adjacent branch in accordance to whichever linkage process took place. In higher splits, there is a higher distance between groups of observations. By setting a threshold of 2.5 in this example we produce 5 clusters. The names of the countries identified in these clusters can be viewed in the table. We can see how hierarchical clustering grouped the outliers in their own individual groups and then nicely separated the remaining countries into 3 understandable groups of high death rate/high birth rate, high birth rate/low death rate, and low borth rate/low death rate. 
+Dendrograms are a visual representation of the linkage processes. As seen above, the reason why Average and Complete Linkage are more commonly used is that it usually provides for more evenly grouped clusters at all thresholds. Below is the dendrogram of the data using complete linkage. When viewing the dendrogram below it is possible to see where these closest pairs end up. Where there is a lower split, the two observations are closer to each other and joined earlier in the linkage process. This does not mean that any adjacent observation is close to it’s adjacent observations. If a single observation connects to a group of observations, this means that the observation’s adjacency is to all of the observations in that adjacent branch in accordance to whichever linkage process took place. In higher splits, there is a higher distance between groups of observations. By setting a threshold of 2.5 in this example we produce 5 clusters. The names of the countries identified in these clusters can be viewed in the table (the head of the data is shown below). We can see how hierarchical clustering grouped the outliers in their own individual groups and then nicely separated the remaining countries into 3 understandable groups of high death rate/high birth rate, high birth rate/low death rate, and low borth rate/low death rate. 
 
 ```{r, out.width='100%'}
 plot(hclust(h.data.dist), labels=data.labs , main="Complete
@@ -413,7 +419,7 @@ Linkage ", xlab="", sub="",ylab="")
 ```{r}
 hc.out=hclust(dist(sd.h.data))
 hc.clusters =cutree (hc.out ,h = 2.5)
-table(hc.clusters, data.labs)
+knitr::kable(head(tibble(country=data.labs,cluster=hc.clusters)),format="markdown")
 ```
 ```{r}
 ggplot(birth_death_rates, aes(birth, death)) + 
