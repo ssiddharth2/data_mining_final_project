@@ -452,5 +452,15 @@ ggplot(birth_death_rates, aes(birth, death)) +
 
 [7] James, G., Witten, D., Hastie, T., &amp; Tibshirani, R. (2017). An introduction to statistical learning with applications in R. New York: Springer. 
 
+[8] Kropko, Jonathan. “Surfing the Data Pipeline with Python.” Exploratory Data Analysis - Surfing the Data Pipeline with Python, 2020, jkropko.github.io/surfing-the-data-pipeline/ch10.html. 
+
+[9] “Prcomp.” RDocumentation, www.rdocumentation.org/packages/stats/versions/3.6.2/topics/prcomp. 
+
+[10] “Principal Component Analysis (PCA) Clearly Explained (2015).” Youtube, StatQuest, 13 Aug. 2015, www.youtube.com/watch?v=_UVHneBUBW0. 
+
+[11] “StatQuest: Principal Component Analysis (PCA), Step-by-Step.” Youtube, StatQuest, 2 Apr. 2018, www.youtube.com/watch?v=FgakZw6K1QQ. 
+
+[12] Woo, Jeffery. “Principal Components Analysis Video Lecture”. STAT 6021 Collab Page. Module 12: Shrinkage Methods. 2 Dec. 2020. 
+
 
 
