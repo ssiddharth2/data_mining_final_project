@@ -51,7 +51,7 @@ Unlike supervised learning where we have a response variable that we are interes
 
 Prior to jumping into PCA as a whole, let’s first examine what principal components are. When given a large dataset with many variables, it can be difficult to fully comprehend and visualize the patterns and trends in the data. Principal components can help us create  a smaller representative set of variables to explain the same amount of variance seen in the large dataset with all variables. Furthermore, the process of computing these components and a smaller set of features, also known as reducing dimensionality,  is called Principal Component Analysis (PCA). PCA can be a very useful data visualization and pre-processing tool for a variety of methodologies including both supervised and unsupervised learning. However for this tutorial we will limit its use to the unsupervise realm of data science. 
 
-In order to understand how PCA works, we must understand how to be able to calculate the first principal component. Let’s first take a look at a simple dataset. We will be using the `birth.death.rates.1966` dataset in the `cluster.datasets` R package. This is a dataset that contains the birth and rates per 1000 persons for 70 different countries. Here is what we get by simply plotting the deaths rates for each country against the birth rates.
+In order to understand how PCA works, we must understand how to be able to calculate the first principal component. Let’s first take a look at a simple dataset. We will be using the `birth.death.rates.1966` dataset in the `cluster.datasets` R package. This is a dataset that contains the birth and death rates per 1000 persons for 70 different countries. Here is what we get by simply plotting the deaths rates for each country against the birth rates.
 
 ```{r include=FALSE}
 data(birth.death.rates.1966)
@@ -59,7 +59,7 @@ data <- birth.death.rates.1966
 birth_death_rates <- data[,c('birth','death')]
 ```
 ```{r echo=FALSE}
-ggplot(data, aes(x=birth, y=death)) + geom_point() + xlab('Birth Rate per 100') + ylab('Death Rate per 100')
+ggplot(data, aes(x=birth, y=death)) + geom_point() + xlab('Birth Rate per 1000') + ylab('Death Rate per 1000')
 ```
 
 When computing the first principal component, we are really trying to find a way to best represent the whole feature space in one dimension. We are trying to find the direction in the feature space that has a high amount of variation between the two data points. As we notice from above, there is more variance in the birth rates between the countries than there is between the individual death rates between the countries. However, the most amount of variability of the data between the countries in one dimension could actually be better represented by a feature that can be expressed as a linear combination of the birth rates and death rates of a country and this is how PCA in simplified terms, is reducing the dimensionality of the data set.
@@ -165,7 +165,7 @@ data <- birth.death.rates.1966
 birth_death_rates <- data[,c('birth','death')]
 ```
 ```{r echo=FALSE}
-ggplot(data, aes(x=birth, y=death)) + geom_point() + xlab('Birth Rate per 100') + ylab('Death Rate per 100')
+ggplot(data, aes(x=birth, y=death)) + geom_point() + xlab('Birth Rate per 1000') + ylab('Death Rate per 1000')
 ```
 
 ### Distance 
@@ -274,7 +274,7 @@ There are several advantages and disadvantages to utilizing the K-Means algorith
 ##### Advantages
 
 - Simple
-  - K-Means is simple to implement, additionally libraries already exist that implement K-Means in both R and python
+  - K-Means is simple to implement, additionally libraries already exist that implement K-Means in both R and python.
 - Guarantee of Convergence$^4$.
   - Although no guarantee that K-Means converged to a globally optimal solution.
 - Scalability
@@ -297,13 +297,13 @@ There are several advantages and disadvantages to utilizing the K-Means algorith
 
 One of the disadvantages discussed above in K-Means is that points are assigned a hard classification to a single point. However, we can utilize distribution-based clustering to receive a soft-classification, or a probability, of a point belonging to a cluster. One of the main Distribution-Based Clustering algorithms is Gaussian Mixture Models. Gaussian Mixture Models treat the probability density distribution as being constructed of K different distributions$^5$:
 
-$f(x) = \sum_{k=1}^K * \pi_k * f_k(x)$
+$f(x) = \sum_{k=1}^K  \pi_k * f_k(x)$
 
 Where $\pi_k$ represents the probability of a point coming from distribution k and $f_k(x)$ represents distribution k. Specifically in Gaussian Mixture Models, each $f_k(x)$ is a gaussian with parameters $\mu_k, \sigma^2_k$. Gaussian Mixture Models attempt to estimate two things:
 
 1. The parameter values
     - This includes the values of each $\pi$, as well as the parameters of the gaussians:  $\mu_k, \sigma^2_k$.
-2. The *responsibilities* of each data point $r_{ij}$
+2. The *responsibilities* of each data point: $p(z_j=1|x_i)$
     - This represents the posterior probability that each data point $i$ came from each distribution $j$.
     
 These values are estimated using the iterative EM algorithm. This algorithm consists of the following steps:
@@ -418,7 +418,7 @@ Linkage ", xlab="", sub="",ylab="", cex = .4)
 
 ### Clustering Visualization
 
-Dendrograms are a visual representation of the linkage processes. As seen above, the reason why Average and Complete Linkage are more commonly used is that it usually provides for more evenly grouped clusters at all thresholds. Below is the dendrogram of the data using complete linkage. When viewing the dendrogram below it is possible to see where these closest pairs end up. Where there is a lower split, the two observations are closer to each other and joined earlier in the linkage process. This does not mean that any adjacent observation is close to it’s adjacent observations. If a single observation connects to a group of observations, this means that the observation’s adjacency is to all of the observations in that adjacent branch in accordance to whichever linkage process took place. In higher splits, there is a higher distance between groups of observations. By setting a threshold of 2.5 in this example we produce 5 clusters. The names of the countries identified in these clusters can be viewed in the table (the head of the data is shown below). We can see how hierarchical clustering grouped the outliers in their own individual groups and then nicely separated the remaining countries into 3 understandable groups of high death rate/high birth rate, high birth rate/low death rate, and low borth rate/low death rate. 
+Dendrograms are a visual representation of the linkage processes. As seen above, the reason why Average and Complete Linkage are more commonly used is that it usually provides for more evenly grouped clusters at all thresholds. Below is the dendrogram of the data using complete linkage. When viewing the dendrogram below it is possible to see where these closest pairs end up. Where there is a lower split, the two observations are closer to each other and joined earlier in the linkage process. This does not mean that any adjacent observation is close to it’s adjacent observations. If a single observation connects to a group of observations, this means that the observation’s adjacency is to all of the observations in that adjacent branch in accordance to whichever linkage process took place. In higher splits, there is a higher distance between groups of observations. By setting a threshold of 2.5 in this example we produce 5 clusters. The names of the countries identified in these clusters can be viewed in the table (the head of the data is shown below). We can see how hierarchical clustering grouped the outliers in their own individual groups and then nicely separated the remaining countries into 3 understandable groups of high death rate/high birth rate, high birth rate/low death rate, and low birth rate/low death rate. 
 
 ```{r, out.width='100%'}
 plot(hclust(h.data.dist), labels=data.labs , main="Complete
@@ -435,7 +435,7 @@ ggplot(birth_death_rates, aes(birth, death)) +
 ```
 
 
-### PCA and k-means
+## PCA and K-Means
 
 Using the k-means clustering methods explored earlier, we can use a similar method to obtain clusters using the first two principal components obtained in the PCA section. First we need to find the optimum number of clusters. One way we approximated this earlier was by looking at the elbow of the SSE vs. K for the clusters plot: 
 
