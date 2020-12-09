@@ -91,16 +91,14 @@ Now that we have a better understanding of how PCA works, let us apply it on a d
 
 <a href=”https://www.kaggle.com/noriuk/us-education-datasets-unification-project?select=output_data”> Dataset Link </a>
 
+We will filter the data to only include the year 2013 and remove rows with any na values. Performing this clearing still leaves us with data on all 50 states as well as the District of Columbia. A sample of some of the predictors in the dataset is shown below.
 ```{r include=FALSE}
 states_education=read_csv("states_all.csv")
-knitr::kable(head(states_education), format="markdown")
 ```
-We will filter the data to only include the year 2013 and remove rows with any na values. Performing this clearing still leaves us with data on all 50 states as well as the District of Columbia. 
-
 ```{r}
 states_education=states_education%>%filter(YEAR==2013)
 states_education=na.omit(states_education)
-knitr::kable(head(states_education), format="markdown")
+knitr::kable(head(states_education[,c('STATE','YEAR','ENROLL','TOTAL_REVENUE','INSTRUCTION_EXPENDITURE')]), format="markdown")
 ```
 
 Then we may turn this data into an unsupervised learning problem by removing the state names altogether, and furthermore perform PCA.  
@@ -110,10 +108,10 @@ educationPCA$sdev
 ```
 
 ```{r}
-knitr::kable(educationPCA$rotation,format="markdown")
+knitr::kable(educationPCA$rotation[,c('PC1','PC2','PC3','PC4','PC5')],format="markdown")
 ```
 
-Runnin the `prcomp` function we can obtain the standard deviations of the principal components as and a matrix of variable loadings. Since we have 22 features, we know that we will also have 22 principal components which is consistent with the output seen above. However,  generally we only need to consider the first few components as they typically explain most of the variance seen in the data. Looking at the first principal component, we can deduce the most important features by looking at which features have the greatest loadings. In this case, we observe that variables related to revenue, expenditure and number of students in specific grades to be the most important. Given that we scaled the data, states with above average total revenues, above average amount of expenditure, as well as an above average number of students in each of the grade levels would have a higher score for this principal component. As we see the first component seems to be a feature that is indicative of how large the state is as loadings are fairly distributed across features like expenditure, revenue, number of students in the different grade levels. There is less emphasis on the test scores in this component. So states with larger populations like California would probably have higher scores for this principal component.The second component is a feature that seems to be more indicative of a state's academic performance as the loadings of this component put emphasis on features related to the test scores in math and reading.
+Runnin the `prcomp` function we can obtain the standard deviations of the principal components as and a matrix of variable loadings. Since we have 22 features, we know that we will also have 22 principal components. The output above shows the first 5 of the 22 principal components. However,  generally we only need to consider the first few components as they typically explain most of the variance seen in the data. Looking at the first principal component, we can deduce the most important features by looking at which features have the greatest loadings. In this case, we observe that variables related to revenue, expenditure and number of students in specific grades to be the most important. Given that we scaled the data, states with above average total revenues, above average amount of expenditure, as well as an above average number of students in each of the grade levels would have a higher score for this principal component. As we see the first component seems to be a feature that is indicative of how large the state is as loadings are fairly distributed across features like expenditure, revenue, number of students in the different grade levels. There is less emphasis on the test scores in this component. So states with larger populations like California would probably have higher scores for this principal component.The second component is a feature that seems to be more indicative of a state's academic performance as the loadings of this component put emphasis on features related to the test scores in math and reading.
 
 To see how many Principal Components are needed to best represent the data, we can use a scree plot to assess how many principal components are needed to capture the variance in the data. This plot gives us the variances of each principal component. As we can see from the scree plot below, the first two components seem to be explaining most of the variance that is found in the data.
 
