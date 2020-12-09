@@ -42,7 +42,7 @@ format_table <- function(x, nmax=10) {
 
 ## Introduction
 
-Unlike supervised learning where we have a response variable that we are interested in measuring, unsupervised learning attempts to find interesting trends and potential sub groupings of observations within datasets that lack a response variable. This presents an interesting challenge to data science as we no longer have the ability to measure how accurate our modeling or analysis is by comparing prediction to the true response variable. Instead we must take a more subjective approach to understanding the data. Therefore the methods used in unsupervised learning are typically a form of exploratory analysis. There are a variety of ways in which unsupervised learning may be implemented, but we will limit our tutorial to two main types: Principal Component Analysis (PCA) and Clustering. 
+Unlike supervised learning where we have a response variable that we are interested in measuring, unsupervised learning attempts to find interesting trends and potential sub groupings of observations within datasets that lack a response variable. This presents an interesting challenge to data science as we no longer have the ability to measure how accurate our modeling or analysis is by comparing prediction to the true response variable. Instead we must take a more subjective approach to understanding the data. Therefore the methods used in unsupervised learning are typically a form of exploratory analysis. There are a variety of ways in which unsupervised learning may be implemented, but we will limit our tutorial to two main types: Principal Component Analysis (PCA) and Clustering. In addition, we recommend this tutorial for students that have been exposed to using preliminary statistical methods in R. 
 
 ## Principal Component Analysis
 
@@ -390,20 +390,20 @@ data.labs = data$country
 sd.h.data=scale(birth_death_rates)
 h.data.dist=dist(sd.h.data)
 plot(hclust(h.data.dist, method = 'single'), labels=data.labs , main="Single
-Linkage ", xlab="", sub="",ylab="")
+Linkage ", xlab="", sub="",ylab="", cex = .4)
 ```
 In complete linkage, the opposite happens. In our example with the cluster containing 1 and 2 and a cluster containing 4 and 5, 3 will go to the cluster that does not contain the independent point farthest from it. Complete linkage can be superior to single linkage where single linkage might be creating a large cluster that spans a large area and truly should have been more than one cluster but instead continually ends up being closer to each point. With complete linkage, by basing distance on the farthest point, we push the center of the cluster away and discourage unification of too many clusters.
 
 ```{r, out.width='100%'}
 plot(hclust(h.data.dist), labels=data.labs , main="Complete
-Linkage ", xlab="", sub="",ylab="")
+Linkage ", xlab="", sub="",ylab="", cex = .4)
 ```
 
 In average linkage, we unsurprisingly take many averages. In our example above, in order to find distance, we would take the average of the distance from 3 to 2 and 3 to 1 to find the distance between the 3 cluster and the cluster containing 1 and 2. Similarly we could take the average of the distance from 3 to 4 and 3 to 5 to find the distance between the 3 cluster and the cluster containing 4 and 5. The smallest distance would determine the cluster which 3 would join. Additionally, we can find the distance between the cluster containing 1 and 2 and the cluster containing 4 and 5. This would be obtained by taking the average of the distance between 1 and 4, 1 and 5, 2 and 4, and 2 and 5. You can see from this that it is the average of ALL possible individual distances.
 
 ```{r, out.width='100%'}
 plot(hclust(h.data.dist, method = 'average'), labels=data.labs , main="Average
-Linkage ", xlab="", sub="",ylab="")
+Linkage ", xlab="", sub="",ylab="", cex = .4)
 
 ```
 
@@ -411,7 +411,7 @@ Centroid linkage similarly does exactly as described. The centroids of each clus
 
 ```{r, out.width='100%'}
 plot(hclust(h.data.dist, method = 'centroid'), labels=data.labs , main="Centroid
-Linkage ", xlab="", sub="",ylab="")
+Linkage ", xlab="", sub="",ylab="", cex = .4)
 
 ```
 
@@ -421,7 +421,7 @@ Dendrograms are a visual representation of the linkage processes. As seen above,
 
 ```{r, out.width='100%'}
 plot(hclust(h.data.dist), labels=data.labs , main="Complete
-Linkage ", xlab="", sub="",ylab="")
+Linkage ", xlab="", sub="",ylab="", cex = .4)
 ```
 ```{r}
 hc.out=hclust(dist(sd.h.data))
@@ -434,7 +434,69 @@ ggplot(birth_death_rates, aes(birth, death)) +
 ```
 
 
-## Conclusion
+### PCA and k-means
+
+Using the k-means clustering methods explored earlier, we can use a similar method to obtain clusters using the first two principal components obtained in the PCA section. First we need to find the optimum number of clusters. One way we approximated this earlier was by looking at the elbow of the SSE vs. K for the clusters plot: 
+
+```{r}
+state_cluster = subset(state_tibble, select = -c(state) )
+#-- Run kmeans for multiple K
+graphData <- tibble()
+Kmax = 8                              # maximum K
+SSE = numeric(Kmax)                       # initiate SSE vector
+for(k in 1:Kmax){
+  km = kmeans(state_cluster, centers=k, nstart=25)   # use 25 starts
+  SSE[k] = km$tot.withinss                # get SSE
+  temp <- state_tibble
+  temp$num_cluster <- k
+  temp$cluster <- factor(km$cluster)
+  graphData <- rbind(graphData,temp)
+}
+```
+```{r}
+plot(1:Kmax, SSE, type='b', las=1, xlab="K")
+```
+
+From the plot it seems as if the 3 is the elbow of the plot. Therefore we can initiate a k-means with 3 centers, meaning 3 clusters. Similar to earlier, the code goes like this:
+
+```{r}
+state_km = kmeans(state_cluster, centers=3, nstart=25)
+state_tibble$cluster <- factor(state_km$cluster)
+ggplot(data=state_tibble, aes(x=PC1,y=PC2, color=cluster)) + geom_point()+ geom_text(label=state_tibble$state,size=2)
+```
+
+For clarity purposes, we also included the state label along with the color of the cluster to indicate which group the algorithm placed a specific state. Looking at cluster 1, it indicated that California, Texas and New York all appear to be grouped together. This is consistent with what we expect as these are the most populous states in America. Clusters 2 and 3 are slightly more difficult to decipher but also seem to suggest an accurate partitioning of observations based on population. 
+
+
+### PCA and Hierarchical Clustering
+
+Much like how we were able to find clusters using the k-means approach, we may also obtain a dendrogram and clusters using hierarchical clustering. Once more, the only difference is now we use the principal components as the features. The code for executing all of the three types of clustering mentioned earlier are executed below:
+
+##### Single Linkage
+```{r, out.width='100%'}
+state_tibble=tibble(PC1=educationPCA$x[,"PC1"],PC2=educationPCA$x[,"PC2"])
+sd.state_tibble=scale(state_tibble)
+state.dist=dist(sd.state_tibble)
+plot(hclust(state.dist, method = 'single'), labels =states_education$STATE, main="Single
+Linkage ", xlab="", sub="",ylab="", cex =.4)
+```
+
+##### Complete Linkage
+```{r, out.width='100%'}
+plot(hclust(state.dist), labels=states_education$STATE , main="Complete
+Linkage ", xlab="", sub="",ylab="", cex = .4)
+```
+
+##### Average Linkage
+```{r, out.width='100%'}
+plot(hclust(state.dist, method="average"), labels=states_education$STATE , main="Average
+Linkage ", xlab="", sub="",ylab="", cex = .4)
+```
+
+And there you have it! As one can see PCA is a very useful tool that can be used in conjunction with other unsupervised learning methods such as clustering.  Although we did not provide an example for using PCA with GMM, one can see that the applying PCA is as simple as changing the features that are imputed into the code. All you need to do is use your most significant principal components as the features in your model instead of the original features. From here you proceed as normal with regards to the steps laid out and you should obtain your results. 
+
+Hopefully you found this tutorial useful in your learning of unsupervised methods. If you are confused about any of the topics mentioned, we recommend you take a look at some of the sources used to create this material, which will surely help you answer any questions. 
+
 
 ## References
 
