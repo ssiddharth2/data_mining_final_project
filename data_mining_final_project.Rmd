@@ -3,6 +3,9 @@ title: "Intro to Unsupervised Learning"
 output: html_document
 ---
 #### Taylor Rohrich (trr2as), Siddharth Surapaneni (sss2ea), Prabhjot Singh (ps4fk), Ben Cosgro (bcc5d)
+
+Hosted version of this document found [here](https://taylorrohrich.github.io/data_mining_final_project/)
+
 ```{r global_options, include=FALSE}
 knitr::opts_chunk$set(error=TRUE,        # Keep compiling upon error
                       collapse=FALSE,    # collapse by default
