@@ -85,6 +85,8 @@ When computing the first principal component, we are really trying to find a way
 
 5. From here we can use the sum of square distances calculated for each principal component in step 2 to determine which of our principal components account for the most variance seen in the data. The principal components that are deemed the most important can then be used as a method to either graph or explain the data in a reduced state. This not only will allow us to visualize the data in two dimensions, but also can be helpful in the reduction of noise seen in high dimensional data and thus be used in combination with other unsupervised methods such as clustering. This will be explained in more detail later on. 
 
+Through this process, we are able to get prinicipal components that we can assess in order to help us reduce the dimensionality of the data to a smaller subspace of features, that are linear combinations of the variables in the data, and these new features can explain most of the variability in our data.
+
 ### Working with A High Dimension Dataset
 
 Now that we have a better understanding of how PCA works, let us apply it on a dataset that has more than 2 dimensions. In R, we can use the `prcomp` function from the `stats` package to do Principal Component Analysis and make all the needed computations discussed above. We will be using the US Education dataset from kaggle that contains data for all 50 states as well as the District of Columbia for years from 1992 to 2019, and has features such as Enrollment, total_revenue, instruction expenditure, the state’s average math score for the NAEP exam,etc. For this tutorial we will mainly focus on the year 2013. 
