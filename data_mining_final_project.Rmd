@@ -2,6 +2,7 @@
 title: "Intro to Unsupervised Learning"
 output: html_document
 ---
+#### Taylor Rohrich (trr2as), Siddharth Surapaneni (sss2ea), Prabhjot Singh (ps4fk), Ben Cosgro (bcc5d)
 ```{r global_options, include=FALSE}
 knitr::opts_chunk$set(error=TRUE,        # Keep compiling upon error
                       collapse=FALSE,    # collapse by default
@@ -378,7 +379,7 @@ In order to utilize this threshold, we first must calculate the distance between
 
 ![Cluster Points](hierarchical_visual.png)
 
-An example of a possible dendrogram for this example is seen below.[7]
+An example of a possible dendrogram for this example is seen below$^7$.
 ![Dendrogram](hierarchical_dendrogram.png)
 
 #### Types of Clustering
